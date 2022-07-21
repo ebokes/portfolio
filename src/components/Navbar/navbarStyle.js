@@ -3,6 +3,11 @@ import styled from "styled-components";
 const green1 = ({ theme }) => theme.color.green1;
 const white = ({ theme }) => theme.color.white;
 
+// sm: "414px",
+// md: "768px",
+// lg: "960px",
+// xl: "1280px",
+
 export const Header = styled.header`
   width: 100%;
   position: fixed;
@@ -31,6 +36,7 @@ export const Logo = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
   width: 4.5rem;
   height: 3.5rem;
   color: #fff;
@@ -52,14 +58,28 @@ export const NavContainer = styled.nav`
   max-width: 120rem;
   margin: 0 auto;
 
+  /* @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+    width: 95%;
+  } */
+
   ul {
     display: flex;
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+      display: none;
+      /* flex-direction: column; */
+      /* justify-content: flex-start; */
+    }
+
     li {
       &:not(:last-child) {
         padding-right: 2.5rem;
+      }
+
+      @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+        padding: 0;
       }
     }
   }
@@ -135,5 +155,13 @@ export const Hire = styled.a`
     transform: scaleX(1);
     transform-origin: left;
     color: #000;
+  }
+`;
+
+export const HamburgerStyle = styled.span`
+  display: none;
+
+  @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+    display: inline-block;
   }
 `;

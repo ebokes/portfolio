@@ -9,10 +9,10 @@ import { Card, CardWrapper, ServicesWrapper } from "./servicesStyle";
 
 const Services = () => {
   return (
-    <Section>
+    <Section bgcolor="#183059">
       <ServicesWrapper>
         <Container>
-          <PageHeading>Services</PageHeading>
+          <PageHeading color="#fff">Soft Skills</PageHeading>
           <CardWrapper>
             {servicesData.map(({ id, icon, title, body }) => (
               <Card key={id}>

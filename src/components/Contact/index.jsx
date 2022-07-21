@@ -49,11 +49,11 @@ const Contact = () => {
     console.log(formInfo);
   };
   return (
-    <Section id="contact">
+    <Section id="contact" bgcolor="#000">
       <Container>
         <ContactWrapper>
           <Left>
-            <PageHeading color="#000" bbc="#000">
+            <PageHeading color="#fff" bbc="#000">
               Send me a message
             </PageHeading>
             <form onSubmit={onSubmit}>

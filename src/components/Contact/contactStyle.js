@@ -20,8 +20,10 @@ export const ContactWrapper = styled.div`
     button {
       padding: 1.5rem 0;
       text-transform: uppercase;
-      background-color: ${blue};
-      color: #fff;
+      /* background-color: ${blue}; */
+      background-color: #feb72b;
+      /* color: #fff; */
+      color: #000;
       border: 0.2rem solid ${blue};
       width: 30%;
       cursor: pointer;
@@ -65,16 +67,21 @@ export const InputWrapper = styled.div`
     background-color: #00102e;
     outline: none;
     border: none;
+    /* border-bottom: 2px solid #092aae; */
     margin: 0.5rem 0 1rem 0;
-    background-color: #eee;
+    /* background-color: #eee; */
+    background-color: #aaa;
+    /* background-color: transparent; */
     color: #333;
+    /* color: #000; */
     font-size: 1.5rem;
     width: 100%;
     /* box-shadow: 0 0 0.5rem 0.2rem rgb(0 0 0 / 20%); */
     box-shadow: 0rem 0rem 0.5rem 0.2rem rgba(0, 0, 0, 0.237);
 
     &::placeholder {
-      color: #777;
+      /* color: #777; */
+      color: #555;
     }
     &:focus {
     }
@@ -103,8 +110,8 @@ export const MessageStyle = styled.div`
     /* color: #000; */
     font-size: 1.5rem;
     font-family: "Mulish", sans-serif;
-    background-color: #eee;
-    color: #333;
+    background-color: #aaa;
+    color: #000;
     outline: none;
     border: none;
     box-shadow: 0rem 0rem 0.5rem 0.2rem rgba(0, 0, 0, 0.237);
@@ -112,7 +119,7 @@ export const MessageStyle = styled.div`
     &::placeholder {
       font-family: "Mulish", sans-serif;
       font-size: 1.4rem;
-      color: #777;
+      color: #555;
     }
   }
 `;

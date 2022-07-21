@@ -13,14 +13,29 @@ export const TechStackWrapper = styled.div`
   column-gap: 4%;
   /* flex-direction: column; */
   /* padding-top: 6rem; */
+
+  /* Still needs tweaking */
+  @media screen and (max-width: ${({ theme }) => theme.screens.sm}) {
+    flex-direction: column;
+  }
 `;
 
 export const Stack = styled.div`
-  width: 60rem;
+  width: 60%;
+
+  @media screen and (max-width: ${({ theme }) => theme.screens.sm}) {
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 
 export const Tools = styled.div`
-  width: 30rem;
+  width: 30%;
+
+  @media screen and (max-width: ${({ theme }) => theme.screens.sm}) {
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 
 export const Tech = styled.div`
@@ -33,6 +48,12 @@ export const Tech = styled.div`
   font-size: 1.5rem;
   background-color: #fff;
   box-shadow: 0rem 0rem 0.7rem 0.1rem rgba(0, 0, 0, 0.237);
+
+  /* Still needs tweaking */
+  /* @media screen and (max-width: ${({ theme }) => theme.screens.sm}) {
+    flex-direction: column;
+    width: fit-content;
+  } */
 
   figure {
     display: flex;

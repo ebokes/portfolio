@@ -1,7 +1,7 @@
 import React from "react";
 import { SiCodewars } from "react-icons/si";
 import { Container, Section } from "../reuseableComponents/contentStyle";
-import { FooterWrapper } from "./footerStyle";
+import { FooterWrapper, Spacer } from "./footerStyle";
 
 const green1 = ({ theme }) => theme.color.green1;
 
@@ -10,11 +10,15 @@ const Footer = () => {
     <Section bgcolor={green1}>
       <Container>
         <FooterWrapper>
-          <p>Copyright &copy; 2022</p>
-          <p>&nbsp;</p>
-          <p>|</p>
-          <p>&nbsp;</p>
-          <p>Designed & Built by Chibuokem Egbuchulam</p>
+          <span>
+            <p>Copyright &copy; 2022</p>
+          </span>
+          <Spacer>
+            <p>|</p>
+          </Spacer>
+          <span>
+            <p>Designed & Built by Chibuokem Egbuchulam</p>
+          </span>
         </FooterWrapper>
       </Container>
     </Section>

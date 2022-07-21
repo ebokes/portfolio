@@ -9,6 +9,19 @@ export const GlobalStyles = createGlobalStyle`
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+    @media screen and (max-width: ${({ theme }) => theme.screens.lg}){
+        font-size: 58%;    
+    }
+
+    @media screen and (max-width: ${({ theme }) => theme.screens.md}){
+        font-size: 52%;
+    }
+
+    @media screen and (max-width: ${({ theme }) => theme.screens.md}){
+        font-size: 45%;
+    }
 }
 
 body{

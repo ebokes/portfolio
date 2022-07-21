@@ -6,15 +6,18 @@ export const Section = styled.section`
   background-color: ${({ bgcolor }) => bgcolor};
   width: 100%;
   padding: 5rem 0;
+  overflow: hidden;
 `;
 
 export const Container = styled.div`
   max-width: 120rem;
   width: 90%;
   margin: 0 auto;
-  /* padding: 10rem auto; */
-  /* position: relative; */
   overflow: hidden;
+
+  /* @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+    width: 95%;
+  } */
 `;
 
 export const PageHeading = styled.h1`

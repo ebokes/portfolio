@@ -38,7 +38,15 @@ const Hero = () => {
               <TypewriterComponent
                 options={{
                   cursor: " />",
-                  strings: ["html", "css", "javascript", "reactjs"],
+                  strings: [
+                    "html",
+                    "css",
+                    "javascript",
+                    "reactjs",
+                    "sass",
+                    "tailwindcss",
+                    "styled-components",
+                  ],
                   autoStart: true,
                   loop: true,
                 }}

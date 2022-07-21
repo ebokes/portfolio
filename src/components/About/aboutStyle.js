@@ -13,7 +13,12 @@ export const AboutWrapper = styled.div`
   width: 100%;
   gap: 2rem;
   padding: 1rem;
+
+  @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+    flex-direction: column-reverse;
+  }
 `;
+
 export const Left = styled.div`
   width: 55rem;
   padding: 2rem;
@@ -22,7 +27,13 @@ export const Left = styled.div`
   background-color: #222;
   font-family: "Poppins", sans-serif;
   color: #ccc;
+
+  @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+    width: 100%;
+    /* padding: 1rem; */
+  }
 `;
+
 export const Right = styled.div`
   width: 33rem;
 
@@ -34,6 +45,13 @@ export const Right = styled.div`
 
 export const Text = styled.div`
   padding: 2rem;
+
+  p {
+    @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+      padding: 1rem 0;
+      /* padding: 1rem; */
+    }
+  }
 `;
 
 export const Cta = styled.div`

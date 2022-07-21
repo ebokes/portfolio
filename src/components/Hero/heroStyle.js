@@ -45,8 +45,20 @@ export const HeroContents = styled.div`
   h2 {
     font-size: 6rem;
     margin: 1rem 0 3rem 0;
+
+    @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+      font-size: 5rem;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.screens.sm}) {
+      font-size: 4rem;
+    }
   }
 `;
+
+// sm: "414px",
+// md: "768px",
+// lg: "960px",
+// xl: "1280px",
 
 export const IntroBody = styled.div`
   & > p {
@@ -54,6 +66,16 @@ export const IntroBody = styled.div`
     display: flex;
     width: 83rem;
     font-family: "Poppins", sans-serif;
+
+    @media screen and (max-width: ${({ theme }) => theme.screens.lg}) {
+      width: 80%;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+      width: 87%;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.screens.sm}) {
+      width: 98%;
+    }
   }
 `;
 

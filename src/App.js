@@ -15,7 +15,8 @@ const theme = {
     transparent: "transparent",
   },
   screens: {
-    sm: "640px",
+    xsm: "414px",
+    sm: "600px",
     md: "768px",
     lg: "960px",
     xl: "1280px",
