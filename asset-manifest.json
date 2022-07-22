@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.fc359aee.js",
+    "main.js": "/portfolio/static/js/main.e2451053.js",
     "static/media/project1.png": "/portfolio/static/media/project1.8d7b39dc466859e7f372.png",
     "static/media/project3.png": "/portfolio/static/media/project3.0e5a486c3a813df1a06d.png",
     "static/media/project2.png": "/portfolio/static/media/project2.10afa6ad94d70fae6b25.png",
     "static/media/thanks.gif": "/portfolio/static/media/thanks.e980a0306e42ffae33f3.gif",
     "static/media/back10.jpg": "/portfolio/static/media/back10.41ff505b6908dd74b551.jpg",
-    "static/media/Chibuokem Egbuchulam Resume.pdf": "/portfolio/static/media/Chibuokem Egbuchulam Resume.461a965a0b0ee4850ea4.pdf",
+    "static/media/Chibuokem Egbuchulam Resume.pdf": "/portfolio/static/media/Chibuokem Egbuchulam Resume.79a066c2a42d5afe59f4.pdf",
     "static/media/sass-svgrepo-com.svg": "/portfolio/static/media/sass-svgrepo-com.02dda4cb70eb34023b9a05eecd50e50e.svg",
     "static/media/react-svgrepo-com.svg": "/portfolio/static/media/react-svgrepo-com.fdd3331d261ad6d5e1c92448737aa2aa.svg",
     "static/media/styled-svgrepo-com.svg": "/portfolio/static/media/styled-svgrepo-com.8428b4dcffc805e3c70227809af2947d.svg",
@@ -21,9 +21,9 @@
     "static/media/material-ui-svgrepo-com.svg": "/portfolio/static/media/material-ui-svgrepo-com.456bfb02539777f812137c514d397868.svg",
     "static/media/git-svgrepo-com.svg": "/portfolio/static/media/git-svgrepo-com.da7cbb7e0f60abd807f4ef40cc3da768.svg",
     "static/media/javascript.svg": "/portfolio/static/media/javascript.0dd1cf6c80bb500c655a617006c1148a.svg",
-    "main.fc359aee.js.map": "/portfolio/static/js/main.fc359aee.js.map"
+    "main.e2451053.js.map": "/portfolio/static/js/main.e2451053.js.map"
   },
   "entrypoints": [
-    "static/js/main.fc359aee.js"
+    "static/js/main.e2451053.js"
   ]
 }
