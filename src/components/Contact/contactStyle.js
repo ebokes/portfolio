@@ -30,6 +30,10 @@ export const ContactWrapper = styled.div`
       position: relative;
       z-index: 1;
 
+      @media screen and (max-width: ${({ theme }) => theme.screens.sm}) {
+        width: 100%;
+      }
+
       &:hover {
         color: ${blue};
       }

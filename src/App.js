@@ -1,7 +1,9 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./GlobalStyles";
 import Layout from "./components/Layout";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const theme = {
   color: {
@@ -25,6 +27,9 @@ const theme = {
 };
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
   return (
     <Fragment>
       <ThemeProvider theme={theme}>

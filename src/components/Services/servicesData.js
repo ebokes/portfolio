@@ -3,6 +3,7 @@ import { IoIosApps } from "react-icons/io";
 import { FaPaintBrush } from "react-icons/fa";
 import { MdOutlineDevices } from "react-icons/md";
 import { ImUserCheck } from "react-icons/im";
+import { VscExpandAll } from "react-icons/vsc";
 
 const servicesData = [
   {
@@ -31,7 +32,7 @@ const servicesData = [
   },
   {
     id: 5,
-    icon: <RiCodeView size={35} color="#002f87" />,
+    icon: <VscExpandAll size={35} color="#002f87" />,
     title: "Scalable websites",
     body: "No matter the number of expected visits to your website, you can get a scalable website to accomodate existing users and the ones to come",
   },

@@ -18,13 +18,13 @@ export const HeroSection = styled(Section)`
   position: relative;
 `;
 
-export const HeroContents = styled.div`
-  position: absolute;
-  top: 55%;
-  transform: translateY(-50%);
-  color: #fff;
-  position: absolute;
+export const HeroContentsWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  height: 85vh;
+`;
 
+export const HeroContents = styled.div`
   h1,
   h2,
   p {
@@ -153,14 +153,14 @@ export const Arrow = styled(VscArrowSmallDown)`
   font-size: 2rem;
 `;
 
-export const MouseDownWrapper = styled.div`
+export const MouseDownWrapper = styled.a`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
   bottom: 1rem;
-  left: 48%;
+  left: 50%;
   color: #fff;
   font-size: 4rem;
   opacity: 0.2;

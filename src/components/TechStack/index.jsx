@@ -7,7 +7,11 @@ import {
   Tools,
 } from "./techStackStyle";
 import { TechData, ToolData } from "./techStackData";
-import { Container, PageHeading } from "../reuseableComponents/contentStyle";
+import {
+  Container,
+  PageHeading,
+  PageHeadingContainer,
+} from "../reuseableComponents/contentStyle";
 
 const TechStack = () => {
   return (
@@ -15,8 +19,12 @@ const TechStack = () => {
       <Container>
         <TechStackWrapper>
           <Stack>
-            <PageHeading color="#fff">Tech Stack</PageHeading>
-            <Tech>
+            <PageHeadingContainer>
+              <PageHeading data-aos="zoom-out" color="#fff">
+                Tech Stack
+              </PageHeading>
+            </PageHeadingContainer>
+            <Tech data-aos="zoom-in">
               {TechData.map((tech) => (
                 <figure key={tech.id}>
                   <img src={tech.src} alt={tech.alt} />
@@ -26,8 +34,12 @@ const TechStack = () => {
             </Tech>
           </Stack>
           <Tools>
-            <PageHeading color="#fff">Tools</PageHeading>
-            <Tech>
+            <PageHeadingContainer>
+              <PageHeading data-aos="zoom-out" color="#fff">
+                Tools
+              </PageHeading>
+            </PageHeadingContainer>
+            <Tech data-aos="zoom-in">
               {ToolData.map((tech) => (
                 <figure key={tech.id}>
                   <img src={tech.src} alt={tech.alt} />

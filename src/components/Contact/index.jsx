@@ -14,6 +14,7 @@ import { InputData } from "./InputData";
 import {
   Container,
   PageHeading,
+  PageHeadingContainer,
   Section,
 } from "../reuseableComponents/contentStyle";
 import Popup from "../Popup";
@@ -55,10 +56,12 @@ const Contact = () => {
       <Container>
         <ContactWrapper>
           <Left>
-            <PageHeading color="#fff" bbc="#000">
-              Send me a message
-            </PageHeading>
-            <form onSubmit={onSubmit}>
+            <PageHeadingContainer>
+              <PageHeading data-aos="zoom-out" color="#fff" bbc="#000">
+                Send me a message
+              </PageHeading>
+            </PageHeadingContainer>
+            <form data-aos="zoom-in" onSubmit={onSubmit}>
               {InputData.map((input) => (
                 <InputWrapper key={input.id}>
                   {/* <label htmlFor={input.name}>{input.label}:</label> */}
@@ -86,7 +89,7 @@ const Contact = () => {
               <button type="submit">Submit</button>
             </form>
           </Left>
-          <Socials>
+          <Socials data-aos="zoom-in-up">
             <LinkedInWrapper>
               <a
                 href="linkedin.com/in/chibuokemegbuchulam"

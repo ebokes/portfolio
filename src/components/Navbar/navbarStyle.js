@@ -49,6 +49,10 @@ export const NavContainer = styled.nav`
   max-width: 120rem;
   margin: 0 auto;
 
+  @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+    width: 95%;
+  }
+
   ul {
     display: flex;
     align-items: center;

@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-const blue = ({ theme }) => theme.color.green1;
-
 export const Section = styled.section`
   background-color: ${({ bgcolor }) => bgcolor};
   width: 100%;
@@ -20,25 +18,18 @@ export const Container = styled.div`
   }
 `;
 
+export const PageHeadingContainer = styled.span`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const PageHeading = styled.h1`
   padding-bottom: 0.5rem;
-  transition: all;
   position: relative;
   margin-bottom: 3rem;
-  display: inline-block;
-  left: 50%;
-  transform: translateX(-50%);
-  /* display: inline-flex;
-  justify-content: center;
-  align-items: center; */
-  text-align: center;
-  transition: 0.5s;
-  color: ${({ color }) => color || blue};
+  color: ${({ color }) => color};
   transition: all 0.5s ease-in-out;
-  /* color: #64ffda; */
-  /* color: ${({ color }) => color}; */
-  /* border-bottom: 0.2rem solid #000;
-  width: 10%; */
 
   &:hover {
     color: ${({ color }) => color};
@@ -51,7 +42,6 @@ export const PageHeading = styled.h1`
     background-color: ${({ bbc }) => bbc || "#000"};
     position: absolute;
     bottom: 0;
-    /* left: 0; */
     transition: transform 250ms ease-in-out;
 
     transform: scaleX(0.5);

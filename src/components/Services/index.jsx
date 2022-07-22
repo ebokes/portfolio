@@ -2,6 +2,7 @@ import React from "react";
 import {
   Container,
   PageHeading,
+  PageHeadingContainer,
   Section,
 } from "../reuseableComponents/contentStyle";
 import servicesData from "./servicesData";
@@ -12,10 +13,14 @@ const Services = () => {
     <Section id="services" bgcolor="#183059">
       <ServicesWrapper>
         <Container>
-          <PageHeading color="#fff">Services</PageHeading>
+          <PageHeadingContainer>
+            <PageHeading data-aos="zoom-out" color="#fff">
+              Services
+            </PageHeading>
+          </PageHeadingContainer>
           <CardWrapper>
             {servicesData.map(({ id, icon, title, body }) => (
-              <Card key={id}>
+              <Card data-aos="flip-right" key={id}>
                 <div>{icon}</div>
                 <h3>{title}</h3>
                 <p>{body}</p>

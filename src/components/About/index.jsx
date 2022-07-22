@@ -1,5 +1,9 @@
 import React from "react";
-import { Container, PageHeading } from "../reuseableComponents/contentStyle";
+import {
+  Container,
+  PageHeading,
+  PageHeadingContainer,
+} from "../reuseableComponents/contentStyle";
 import avatar from "../../images/development-web-development-svgrepo-com.svg";
 import resume from "../../images/Chibuokem Egbuchulam Resume.pdf";
 import {
@@ -16,9 +20,17 @@ const About = () => {
   return (
     <AboutSection id="about">
       <Container>
-        <PageHeading color="#fff">About Me</PageHeading>
+        <PageHeadingContainer>
+          <PageHeading
+            color="#fff"
+            data-aos="zoom-out"
+            data-aos-easing="ease-in-sine"
+          >
+            About Me
+          </PageHeading>
+        </PageHeadingContainer>
         <AboutWrapper>
-          <Left>
+          <Left data-aos="fade-right">
             <Text>
               {/* <p>
                 I am gifted at translating basic client requirements into
@@ -33,7 +45,7 @@ const About = () => {
               <p>
                 I'm a success-driven and determined Frontend developer. I have
                 experience using HTML, CSS, Sass, TailwindCSS,
-                styled-components, JavaScript (ES6+) and Reactjs to build
+                styled-components, JavaScript (ES6+), Reactjs to build
                 accessible component-based web pages and systems. I am a
                 passionate person willing to learn more technologies to become a
                 better developer, I'm determined and result oriented.
@@ -50,7 +62,7 @@ const About = () => {
               </ResumeBtn>
             </Cta>
           </Left>
-          <Right width="50%">
+          <Right width="50%" data-aos="fade-left">
             <img src={avatar} alt="avatar" />
           </Right>
         </AboutWrapper>

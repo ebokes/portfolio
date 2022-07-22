@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <Header navbar={navColor}>
-      <NavContainer>
+      <NavContainer data-aos="zoom-out">
         <Logo href="#home" navbar={navColor}>
           <h2>ce</h2>
         </Logo>
