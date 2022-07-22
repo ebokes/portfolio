@@ -155,6 +155,7 @@ export const Col2 = styled.div`
     border-radius: 2rem;
     color: #fff;
     margin-bottom: 0.5rem;
+    margin-top: 0.7rem;
   }
 `;
 

@@ -17,11 +17,11 @@ export const CardWrapper = styled.div`
   }
 `;
 export const Card = styled.div`
-  padding: 4rem;
+  padding: 3rem;
   /* width: 30%; */
   border: 1px solid #ddd;
   transition: all 0.5s;
-  margin: 1.5rem 2rem;
+  margin: 1rem 1rem;
   flex: 1;
   border-radius: 5px;
   background-color: #fff;
@@ -34,6 +34,7 @@ export const Card = styled.div`
   h3 {
     margin: 1rem 0;
     font-family: "Poppins", sans-serif;
+    font-size: 2.3rem;
   }
 
   p {
