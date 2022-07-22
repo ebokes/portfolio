@@ -5,7 +5,7 @@ const blue = ({ theme }) => theme.color.green1;
 export const Section = styled.section`
   background-color: ${({ bgcolor }) => bgcolor};
   width: 100%;
-  padding: 5rem 0;
+  padding: 7rem 0 5rem 0;
   overflow: hidden;
 `;
 

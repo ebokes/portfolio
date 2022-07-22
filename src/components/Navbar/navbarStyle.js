@@ -1,12 +1,6 @@
 import styled from "styled-components";
 
-const green1 = ({ theme }) => theme.color.green1;
 const white = ({ theme }) => theme.color.white;
-
-// sm: "414px",
-// md: "768px",
-// lg: "960px",
-// xl: "1280px",
 
 export const Header = styled.header`
   width: 100%;
@@ -15,9 +9,6 @@ export const Header = styled.header`
   left: 0;
   height: 7rem;
   background-color: #00102e;
-  /* background-color: #060b23; */
-  /* background-color: ${green1}; */
-  /* border-bottom: 0.1rem solid #c4c4c4; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,9 +20,9 @@ export const Header = styled.header`
     background-color: transparent;
     box-shadow: 0 0;
     border-bottom: 0.1rem solid #c4c4c4;
-    /* border-bottom: 0.1rem solid #feb72b; */
   }
 `;
+
 export const Logo = styled.a`
   display: flex;
   justify-content: center;
@@ -40,8 +31,8 @@ export const Logo = styled.a`
   width: 4.5rem;
   height: 3.5rem;
   color: #fff;
-  /* border: 0.2rem solid #000; */
   border: 0.2rem solid #fff;
+
   h2 {
     text-transform: uppercase;
   }
@@ -58,10 +49,6 @@ export const NavContainer = styled.nav`
   max-width: 120rem;
   margin: 0 auto;
 
-  /* @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
-    width: 95%;
-  } */
-
   ul {
     display: flex;
     align-items: center;
@@ -69,8 +56,6 @@ export const NavContainer = styled.nav`
 
     @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
       display: none;
-      /* flex-direction: column; */
-      /* justify-content: flex-start; */
     }
 
     li {
@@ -95,7 +80,6 @@ export const ButtonLink = styled.a`
 
   ${({ navbar }) => navbar} {
     color: #fff;
-    /* color: #feb72b; */
   }
 
   :hover {
@@ -119,7 +103,6 @@ export const ButtonLink = styled.a`
     transform: scaleX(1);
     background-color: #feb72b;
     /* transform-origin: left; */
-    /* width: 6rem; */
   }
 `;
 
@@ -138,7 +121,6 @@ export const Hire = styled.a`
     width: 100%;
     height: 100%;
     background-color: rgb(254, 184, 43);
-    /* background-color: rgba(0, 0, 0, 0.5); */
     position: absolute;
     top: 0;
     left: 0;

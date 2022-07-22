@@ -9,8 +9,6 @@ const projectData = [
     text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A veritatis, inventore expedita iusto tenetur necessitatibus?",
     text1:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A veritatis, inventore expedita iusto tenetur necessitatibus?",
-    text2:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A veritatis, inventore expedita iusto tenetur necessitatibus?",
     stack: ["html", "css", "react", "styled-component", "context-API"],
     code: "/nail-boutique",
     live: "/nail-boutique",
@@ -21,8 +19,6 @@ const projectData = [
     title: "Surftweb",
     text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A veritatis, inventore expedita iusto tenetur necessitatibus?",
     text1:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A veritatis, inventore expedita iusto tenetur necessitatibus?",
-    text2:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A veritatis, inventore expedita iusto tenetur necessitatibus?",
     stack: ["html", "css", "react", "styled-component"],
     code: "/surftweb",
@@ -35,8 +31,6 @@ const projectData = [
     title: "QuizBee",
     text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A veritatis, inventore expedita iusto tenetur necessitatibus?",
     text1:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A veritatis, inventore expedita iusto tenetur necessitatibus?",
-    text2:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A veritatis, inventore expedita iusto tenetur necessitatibus?",
     stack: ["html", "css", "react"],
     code: "/nail-boutique",

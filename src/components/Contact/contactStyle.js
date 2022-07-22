@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const blue = ({ theme }) => theme.color.green1;
-// const white = ({ theme }) => theme.color.white;
 
 export const ContactWrapper = styled.div`
   display: flex;
@@ -70,7 +69,8 @@ export const InputWrapper = styled.div`
     /* border-bottom: 2px solid #092aae; */
     margin: 0.5rem 0 1rem 0;
     /* background-color: #eee; */
-    background-color: #aaa;
+    /* background-color: #aaa; */
+    background-color: #e3e3e6;
     /* background-color: transparent; */
     color: #333;
     /* color: #000; */
@@ -80,7 +80,6 @@ export const InputWrapper = styled.div`
     box-shadow: 0rem 0rem 0.5rem 0.2rem rgba(0, 0, 0, 0.237);
 
     &::placeholder {
-      /* color: #777; */
       color: #555;
     }
     &:focus {
@@ -91,6 +90,7 @@ export const InputWrapper = styled.div`
     &:-webkit-autofill:focus,
     &:-webkit-autofill:active {
       -webkit-box-shadow: 0 0 0 30px #eee inset !important;
+      box-shadow: 0 0 0 30px #eee inset !important;
     }
     &:-webkit-autofill {
       -webkit-text-fill-color: #333 !important;
@@ -104,13 +104,11 @@ export const MessageStyle = styled.div`
 
   textarea {
     padding: 1rem;
-    /* background-color: inherit; */
-    /* border: 0.1rem solid #000; */
     margin: 0.5rem 0 1rem 0;
-    /* color: #000; */
     font-size: 1.5rem;
     font-family: "Mulish", sans-serif;
-    background-color: #aaa;
+    /* background-color: #aaa; */
+    background-color: #e3e3e6;
     color: #000;
     outline: none;
     border: none;
@@ -128,4 +126,54 @@ export const Left = styled.div`
   width: 80%;
   padding-top: 2rem;
   margin: 0 auto;
+
+  @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+    width: 100%;
+  }
 `;
+
+export const Socials = styled.div`
+  position: fixed;
+  right: 1rem;
+  bottom: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width: ${({ theme }) => theme.screens.lg}) {
+    display: none;
+  }
+`;
+
+export const Line = styled.div`
+  border-left: 1px solid #fff;
+  height: 12rem;
+`;
+
+export const SocialIcons = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 1rem;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(1.06);
+    }
+  }
+`;
+
+export const LinkedInWrapper = styled(SocialIcons)`
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  color: blue;
+  background-color: #fff;
+`;
+
+export const GithubWrapper = styled(SocialIcons)``;

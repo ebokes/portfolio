@@ -7,7 +7,6 @@ import Navbar from "./Navbar";
 import Project from "./Projects";
 import Services from "./Services";
 import TechStack from "./TechStack";
-// import { LayoutStyle } from "./Layout/layoutStyle";
 
 const Layout = () => {
   return (

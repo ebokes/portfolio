@@ -53,8 +53,6 @@ export const PopupMessage = styled.div`
       line-height: 1.5;
       color: #444;
       font-size: 1.8rem;
-
-      /* text-transform: uppercase; */
     }
   }
 `;

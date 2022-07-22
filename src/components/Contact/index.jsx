@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import {
   ContactWrapper,
+  GithubWrapper,
   InputWrapper,
   Left,
+  Line,
+  LinkedInWrapper,
   MessageStyle,
-  Right,
+  Socials,
 } from "./contactStyle";
-import { IoCallSharp, IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
-import { MdOutlineAlternateEmail } from "react-icons/md";
+import { RiLinkedinFill, RiGithubFill } from "react-icons/ri";
 import { InputData } from "./InputData";
 import {
   Container,
@@ -49,7 +51,7 @@ const Contact = () => {
     console.log(formInfo);
   };
   return (
-    <Section id="contact" bgcolor="#000">
+    <Section id="contact">
       <Container>
         <ContactWrapper>
           <Left>
@@ -84,29 +86,27 @@ const Contact = () => {
               <button type="submit">Submit</button>
             </form>
           </Left>
-          {/* <Right>
-            <PageHeading color="#000" bbc="#000">
-              Connect with me
-            </PageHeading>
-            <div>
+          <Socials>
+            <LinkedInWrapper>
               <a
                 href="linkedin.com/in/chibuokemegbuchulam"
                 target="_blank"
                 rel="noreferrer"
               >
-                <IoLogoLinkedin size={30} color="#000" />
+                <RiLinkedinFill size={30} color="#00102e" />
               </a>
-            </div>
-            <div>
+            </LinkedInWrapper>
+            <GithubWrapper>
               <a
                 href="https://github.com/ebokes"
                 target="_blank"
                 rel="noreferrer"
               >
-                <IoLogoGithub size={30} color="#000" />
+                <RiGithubFill size={45} />
               </a>
-            </div>
-          </Right> */}
+            </GithubWrapper>
+            <Line />
+          </Socials>
         </ContactWrapper>
         {popup && <Popup />}
       </Container>

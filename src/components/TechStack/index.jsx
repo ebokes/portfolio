@@ -11,11 +11,11 @@ import { Container, PageHeading } from "../reuseableComponents/contentStyle";
 
 const TechStack = () => {
   return (
-    <TechStackSection>
+    <TechStackSection id="tech-stack">
       <Container>
         <TechStackWrapper>
           <Stack>
-            <PageHeading>Tech Stack</PageHeading>
+            <PageHeading color="#fff">Tech Stack</PageHeading>
             <Tech>
               {TechData.map((tech) => (
                 <figure key={tech.id}>
@@ -26,7 +26,7 @@ const TechStack = () => {
             </Tech>
           </Stack>
           <Tools>
-            <PageHeading color="#00102e">Tools</PageHeading>
+            <PageHeading color="#fff">Tools</PageHeading>
             <Tech>
               {ToolData.map((tech) => (
                 <figure key={tech.id}>

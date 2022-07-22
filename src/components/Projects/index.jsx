@@ -5,37 +5,29 @@ import {
   Section,
 } from "../reuseableComponents/contentStyle";
 import {
-  ButtonGroup,
   CodeIcon,
   Col1,
   Col2,
-  ImgWrapper,
   LiveIcon,
   Overlay,
   ProjectImgWrapper,
   ProjectWrapper,
   Row,
-  Text,
 } from "./projectStyle";
 import projectData from "./projectData";
 
 const Project = () => {
   return (
-    <Section bgcolor="#183059">
+    <Section id="projects" bgcolor="#183059">
       <Container>
         <ProjectWrapper>
           <PageHeading color="#fff">Projects</PageHeading>
-          {/* <ImgWrapper> */}
           {projectData.map((item) => (
-            <Row
-              key={item.id}
-              style={{ flexDirection: item.id % 2 === 0 && "row-reverse" }}
-            >
+            <Row key={item.id} fd={item.id % 2 === 0 && "row-reverse"}>
               <Col1>
                 <ProjectImgWrapper>
                   <img src={item.img} alt="" />
                   <Overlay>
-                    <h1>0{item.id}</h1>
                     <span>
                       <a href={item.code}>
                         <CodeIcon />
@@ -59,18 +51,16 @@ const Project = () => {
                   <p>{item.text1}</p>
                 </div>
                 <div>
-                  <h4>Features</h4>
-                  <p>{item.text2}</p>
+                  <h4>Tech stack</h4>
+                  <span>
+                    {item.stack.map((tech, index) => (
+                      <p key={index}>{tech}</p>
+                    ))}
+                  </span>
                 </div>
-                <span>
-                  {item.stack.map((tech) => (
-                    <p>{tech}</p>
-                  ))}
-                </span>
               </Col2>
             </Row>
           ))}
-          {/* </ImgWrapper> */}
         </ProjectWrapper>
       </Container>
     </Section>

@@ -3,9 +3,9 @@ import { LinkButton } from "../reuseableComponents/Button";
 import { Section } from "../reuseableComponents/contentStyle";
 
 export const AboutSection = styled(Section)`
-  /* background-color: #2b2d4282; */
   background-color: #2b2d42e3;
 `;
+
 export const AboutWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -30,7 +30,6 @@ export const Left = styled.div`
 
   @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
     width: 100%;
-    /* padding: 1rem; */
   }
 `;
 
@@ -49,7 +48,6 @@ export const Text = styled.div`
   p {
     @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
       padding: 1rem 0;
-      /* padding: 1rem; */
     }
   }
 `;
@@ -60,12 +58,9 @@ export const Cta = styled.div`
 `;
 
 export const ProjectBtn = styled(LinkButton)`
-  /* color: #0ba4e0; */
-
   &:hover {
     color: #fff;
     border: 1px solid #0ba4e0;
-    /* border: none; */
   }
 
   &::before {
@@ -79,8 +74,4 @@ export const ProjectBtn = styled(LinkButton)`
     background-color: #0ba4e0;
   }
 `;
-export const ResumeBtn = styled(ProjectBtn)`
-  /* &:hover {
-    color: #000;
-  } */
-`;
+export const ResumeBtn = styled(ProjectBtn)``;

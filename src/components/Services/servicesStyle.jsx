@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ServicesWrapper = styled.div``;
+
 export const CardWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -33,7 +34,6 @@ export const Card = styled.div`
   h3 {
     margin: 1rem 0;
     font-family: "Poppins", sans-serif;
-    /* color: #002f87; */
   }
 
   p {

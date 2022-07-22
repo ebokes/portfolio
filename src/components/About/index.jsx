@@ -7,7 +7,6 @@ import {
   AboutWrapper,
   Cta,
   Left,
-  ProjectBtn,
   ResumeBtn,
   Right,
   Text,
@@ -15,7 +14,7 @@ import {
 
 const About = () => {
   return (
-    <AboutSection id="contact">
+    <AboutSection id="about">
       <Container>
         <PageHeading color="#fff">About Me</PageHeading>
         <AboutWrapper>
@@ -34,10 +33,10 @@ const About = () => {
               <p>
                 I'm a success-driven and determined Frontend developer. I have
                 experience using HTML, CSS, Sass, TailwindCSS,
-                styled-components, javascript (ES6+) and Reactjs to build
+                styled-components, JavaScript (ES6+) and Reactjs to build
                 accessible component-based web pages and systems. I am a
                 passionate person willing to learn more technologies to become a
-                better developer, I'm determined and result orietend.
+                better developer, I'm determined and result oriented.
               </p>
               <p>
                 I have achieved a good understanding of relational databases, as
@@ -46,7 +45,6 @@ const About = () => {
               </p>
             </Text>
             <Cta>
-              <ProjectBtn href="#projects">Projects</ProjectBtn>
               <ResumeBtn href={resume} target="_blank">
                 Resume
               </ResumeBtn>

@@ -12,22 +12,22 @@ html{
     scroll-behavior: smooth;
     
     @media screen and (max-width: ${({ theme }) => theme.screens.lg}){
-        font-size: 58%;    
+        font-size: 60%;    
     }
 
     @media screen and (max-width: ${({ theme }) => theme.screens.md}){
-        font-size: 52%;
+        font-size: 58%;
     }
 
     @media screen and (max-width: ${({ theme }) => theme.screens.md}){
-        font-size: 45%;
+        font-size: 54%;
     }
 }
 
 body{
     font-family: "Mulish", sans-serif;
     font-size: 1.6rem;
-    /* background-color: #0a192f; */
+    background-color: #0a192f;
     /* color: #64ffda; */
 }
 

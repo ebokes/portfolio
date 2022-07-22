@@ -1,7 +1,6 @@
 import React from "react";
 import thanks from "../../images/thanks.gif";
 import { PopupMessage, Container, PopupButton } from "./popupStyle";
-// import thumbsUp from "../../assests/thumbs-up.png";
 
 const Popup = () => {
   return (

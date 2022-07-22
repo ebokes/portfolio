@@ -1,13 +1,12 @@
 import React from "react";
-import { SiCodewars } from "react-icons/si";
-import { Container, Section } from "../reuseableComponents/contentStyle";
-import { FooterWrapper, Spacer } from "./footerStyle";
+import { Container } from "../reuseableComponents/contentStyle";
+import { FooterSection, FooterWrapper, Spacer } from "./footerStyle";
 
 const green1 = ({ theme }) => theme.color.green1;
 
 const Footer = () => {
   return (
-    <Section bgcolor={green1}>
+    <FooterSection id="footer" bgcolor={green1}>
       <Container>
         <FooterWrapper>
           <span>
@@ -21,7 +20,7 @@ const Footer = () => {
           </span>
         </FooterWrapper>
       </Container>
-    </Section>
+    </FooterSection>
   );
 };
 

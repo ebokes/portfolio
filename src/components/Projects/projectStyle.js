@@ -2,24 +2,20 @@ import styled from "styled-components";
 import { HiCode } from "react-icons/hi";
 import { CgScreen } from "react-icons/cg";
 
-// const
-
 export const ProjectWrapper = styled.div`
   width: 100%;
-  /* color: #fff; */
 `;
 export const Row = styled.div`
   display: flex;
   justify-content: center;
   gap: 3%;
-  /* margin-bottom: 8rem; */
-  /* background-color: #2c7da0; */
   background-color: #e3e3e6;
   width: 80%;
-  padding: 2rem;
+  padding: 3rem 2rem 5rem;
   box-shadow: 0 0 15px 3px #0000006a;
   align-items: center;
   margin: 4rem auto;
+  flex-direction: ${({ fd }) => fd || "row"};
 
   @media screen and (max-width: ${({ theme }) => theme.screens.lg}) {
     width: 100%;
@@ -32,10 +28,9 @@ export const Row = styled.div`
 
 export const Col1 = styled.div`
   width: 50%;
-  height: 30rem;
 
   @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
-    width: 80%;
+    width: 100%;
     height: 80%;
     margin-bottom: 2rem;
   }
@@ -44,17 +39,11 @@ export const Col1 = styled.div`
 export const ProjectImgWrapper = styled.div`
   width: 100%;
   height: 100%;
-  /* height: 20rem; */
   position: relative;
-  /* z-index: -1; */
 
   img {
     width: 100%;
   }
-
-  /* &:hover{
-    opacity: 1;
-  } */
 
   &::before {
     content: "";
@@ -65,12 +54,10 @@ export const ProjectImgWrapper = styled.div`
     left: 0;
     transition: transform 0.6s ease-in-out;
     background: linear-gradient(45deg, rgba(0, 16, 46), rgba(0, 31, 88));
-    /* background-color: red; */
     font-size: 9rem;
     text-align: end;
     font-family: "Sarabun", sans-serif;
     color: #fff;
-    /* opacity: 0.9; */
     transform: scaleY(1);
     z-index: 1;
     transform-origin: bottom;
@@ -79,7 +66,6 @@ export const ProjectImgWrapper = styled.div`
 
   &:hover::before {
     transform: scaleY(0);
-    /* transform-origin: top; */
     background: linear-gradient(45deg, rgba(0, 16, 46), rgba(0, 31, 88));
   }
 `;
@@ -88,9 +74,19 @@ export const Overlay = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   color: #fff;
+  display: flex;
+  align-self: center;
+  justify-content: center;
   z-index: 2;
-  opacity: 0;
+  /* opacity: 0; */
+  transition: all 0.5s ease-out 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
 
   h1 {
     /* position: absolute; */
@@ -105,15 +101,19 @@ export const Overlay = styled.div`
   }
 
   span {
+    position: absolute;
+    bottom: -4rem;
+    /* left: 0; */
     width: 10rem;
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    display: flex;
     gap: 2rem;
-    margin-top: 1rem;
-    bottom: 0rem;
-    left: 0rem;
-    /* opacity: 0; */
+    justify-content: center;
+    /* align-items: center; */
+
+    :hover {
+      opacity: 1;
+    }
 
     a {
       padding: 0.5rem 1rem;
@@ -125,22 +125,23 @@ export const Overlay = styled.div`
       align-items: center;
       margin-right: 1rem;
     }
-
-    :hover {
-      opacity: 1;
-    }
   }
 `;
 
-export const CodeIcon = styled(HiCode)``;
+export const CodeIcon = styled(HiCode)`
+  margin-right: 0.5rem;
+`;
 
-export const LiveIcon = styled(CgScreen)``;
+export const LiveIcon = styled(CgScreen)`
+  margin-right: 0.5rem;
+`;
 
 export const Col2 = styled.div`
   width: 50%;
 
   @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
     width: 100%;
+    margin-top: 4rem;
   }
 
   div {
@@ -149,10 +150,10 @@ export const Col2 = styled.div`
   span p {
     display: inline-block;
     margin-right: 0.5rem;
-    padding: 0.3rem 1rem;
-    background-color: #feb72b;
+    padding: 0.3rem 1.2rem 0.5rem 1.2rem;
+    background: #183059;
     border-radius: 2rem;
-    color: #000;
+    color: #fff;
     margin-bottom: 0.5rem;
   }
 `;

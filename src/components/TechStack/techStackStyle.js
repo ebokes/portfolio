@@ -3,7 +3,6 @@ import { Section } from "../reuseableComponents/contentStyle";
 
 export const TechStackSection = styled(Section)`
   background-color: #2b2d4221;
-  /* background-color: #2b2d425b; */
 `;
 
 export const TechStackWrapper = styled.div`
@@ -11,10 +10,7 @@ export const TechStackWrapper = styled.div`
   width: 100%;
   justify-content: center;
   column-gap: 4%;
-  /* flex-direction: column; */
-  /* padding-top: 6rem; */
 
-  /* Still needs tweaking */
   @media screen and (max-width: ${({ theme }) => theme.screens.sm}) {
     flex-direction: column;
   }
@@ -46,8 +42,8 @@ export const Tech = styled.div`
   padding-top: 2rem;
   margin-bottom: 4rem;
   font-size: 1.5rem;
-  background-color: #fff;
   box-shadow: 0rem 0rem 0.7rem 0.1rem rgba(0, 0, 0, 0.237);
+  background-color: #e3e3e6;
 
   /* Still needs tweaking */
   /* @media screen and (max-width: ${({ theme }) => theme.screens.sm}) {
@@ -61,6 +57,7 @@ export const Tech = styled.div`
     align-items: center;
     width: 15rem;
     margin-bottom: 4rem;
+    font-weight: 600;
 
     img {
       width: 8rem;

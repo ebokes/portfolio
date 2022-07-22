@@ -3,12 +3,10 @@ import styled from "styled-components";
 import study from "../../images/back10.jpg";
 import { LinkButton } from "../reuseableComponents/Button";
 import { VscArrowSmallDown } from "react-icons/vsc";
+import { Section } from "../reuseableComponents/contentStyle";
+import TypewriterComponent from "typewriter-effect";
 
-// const green1 = ({ theme }) => theme.color.green1;
-// const green2 = ({ theme }) => theme.color.green2;
-// const green3 = ({ theme }) => theme.color.green3;
-
-export const HeroSection = styled.section`
+export const HeroSection = styled(Section)`
   background: url(${study});
   height: 100vh;
   background-color: #00102e;
@@ -49,16 +47,12 @@ export const HeroContents = styled.div`
     @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
       font-size: 5rem;
     }
+
     @media screen and (max-width: ${({ theme }) => theme.screens.sm}) {
       font-size: 4rem;
     }
   }
 `;
-
-// sm: "414px",
-// md: "768px",
-// lg: "960px",
-// xl: "1280px",
 
 export const IntroBody = styled.div`
   & > p {
@@ -86,19 +80,45 @@ export const TypewriterText = styled.span`
   font-size: 1.9rem;
   font-family: "Poppins", sans-serif;
 
+  p {
+  }
+
   span {
     color: #feb72b;
+
+    @media screen and (max-width: 293px) {
+      display: block;
+    }
+  }
+`;
+
+export const Typewriter = styled(TypewriterComponent)`
+  @media screen and (max-width: 293px) {
+    display: inline;
   }
 `;
 
 export const ButtonWrapper = styled.div`
   height: 5rem;
-  width: 100%;
+  /* width: 100%; */
+
+  @media screen and (max-width: 293px) {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    justify-self: center;
+    /* align-items: center; */
+    flex-direction: column;
+  }
 `;
 
 export const GetInTouchBtn = styled(LinkButton)`
   margin-right: 5rem;
 
+  @media screen and (max-width: 293px) {
+    width: 100%;
+    margin-top: 2rem;
+  }
   &:hover {
     color: #000;
   }
@@ -107,9 +127,15 @@ export const ProjectBtn = styled(LinkButton)`
   border: 0.1rem solid #feb72b;
   color: #feb72b;
 
+  @media screen and (max-width: 293px) {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
   &:hover {
-    color: #fff;
+    color: #000;
     border: 0.1rem solid #ea9e05;
+    font-weight: 600;
   }
 
   &::before {
@@ -122,12 +148,9 @@ export const ProjectBtn = styled(LinkButton)`
   }
 `;
 
-// c="#fff" bgc="transparent"
-
 export const Mouse = styled(BsMouse)``;
 export const Arrow = styled(VscArrowSmallDown)`
   font-size: 2rem;
-  /* margin-top: 0.1rem; */
 `;
 
 export const MouseDownWrapper = styled.div`
@@ -138,7 +161,6 @@ export const MouseDownWrapper = styled.div`
   position: absolute;
   bottom: 1rem;
   left: 48%;
-  /* transform: translateX(-50%); */
   color: #fff;
   font-size: 4rem;
   opacity: 0.2;
@@ -154,8 +176,13 @@ export const MouseDownWrapper = styled.div`
     100% {
       transform: translateY(0);
     }
-    /* 100% {
-      transform: translateY(2px);
-    } */
   }
 `;
+
+// export const ButtonGroup = styled.span`
+//   display: flex;
+
+//   @media screen and (max-width: ${({ theme }) => theme.screens.xsm}) {
+//     flex-direction: column;
+//   }
+// `;
