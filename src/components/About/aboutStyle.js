@@ -46,6 +46,9 @@ export const Text = styled.div`
   padding: 2rem;
 
   p {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
     @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
       padding: 1rem 0;
     }

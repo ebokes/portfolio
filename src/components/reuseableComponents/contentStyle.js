@@ -15,9 +15,9 @@ export const Container = styled.div`
   margin: 0 auto;
   overflow: hidden;
 
-  /* @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+  @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
     width: 95%;
-  } */
+  }
 `;
 
 export const PageHeading = styled.h1`

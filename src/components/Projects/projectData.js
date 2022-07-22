@@ -10,8 +10,8 @@ const projectData = [
     text1:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A veritatis, inventore expedita iusto tenetur necessitatibus?",
     stack: ["html", "css", "react", "styled-component", "context-API"],
-    code: "/nail-boutique",
-    live: "/nail-boutique",
+    code: "https://github.com/Meldy2503/nail-boutique",
+    live: "https://nail-boutique.netlify.app/",
   },
   {
     id: 2,
@@ -21,8 +21,8 @@ const projectData = [
     text1:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A veritatis, inventore expedita iusto tenetur necessitatibus?",
     stack: ["html", "css", "react", "styled-component"],
-    code: "/surftweb",
-    live: "/surtfweb",
+    code: "https://github.com/ebokes/surftweb",
+    live: "https://confident-murdock-227ea6.netlify.app/",
   },
 
   {
@@ -33,8 +33,8 @@ const projectData = [
     text1:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A veritatis, inventore expedita iusto tenetur necessitatibus?",
     stack: ["html", "css", "react"],
-    code: "/nail-boutique",
-    live: "/nail-boutique",
+    code: "https://github.com/ebokes/quiz_bee",
+    live: "https://ebokes.github.io/quiz_bee/",
   },
 ];
 export default projectData;

@@ -62,9 +62,18 @@ export const PopupButton = styled(LinkButton)`
   margin-top: 3rem;
   border: none;
   border-radius: 0.5rem;
+  color: #000;
+  background-color: #feb72b;
+  box-shadow: 0rem 0 0.5rem 0.1rem #00000026;
 
   :hover {
-    box-shadow: inset 30rem 0 0 0 #47425d;
-    color: #fff;
+    /* box-shadow: 30rem 0 0 0 #47425d; */
+    /* color: #000; */
+  }
+
+  :hover::before {
+    background-color: #022463fc;
+    border-radius: 0.5rem;
+    /* transform-origin: left; */
   }
 `;

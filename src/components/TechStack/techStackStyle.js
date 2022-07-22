@@ -45,10 +45,9 @@ export const Tech = styled.div`
   box-shadow: 0rem 0rem 0.7rem 0.1rem rgba(0, 0, 0, 0.237);
   background-color: #e3e3e6;
 
-  /* Still needs tweaking */
-  /* @media screen and (max-width: ${({ theme }) => theme.screens.sm}) {
+  /* @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
     flex-direction: column;
-    width: fit-content;
+    width: 100%;
   } */
 
   figure {

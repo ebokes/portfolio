@@ -12,7 +12,7 @@ const Popup = () => {
             Thanks for reaching out ! <br /> I will get back to you as soon as
             possible
           </p>
-          <PopupButton href="/">OK</PopupButton>
+          <PopupButton href="/home">OK</PopupButton>
         </div>
       </PopupMessage>
     </Container>

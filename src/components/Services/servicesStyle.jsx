@@ -7,7 +7,7 @@ export const CardWrapper = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
 
-  @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+  @media screen and (max-width: ${({ theme }) => theme.screens.lg}) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
