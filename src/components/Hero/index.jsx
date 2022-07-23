@@ -1,4 +1,5 @@
 import React from "react";
+import TypewriterComponent from "typewriter-effect";
 import { Container } from "../reuseableComponents/contentStyle";
 import {
   HeroSection,
@@ -11,7 +12,6 @@ import {
   Mouse,
   MouseDownWrapper,
   Arrow,
-  Typewriter,
   HeroContentsWrapper,
 } from "./heroStyle";
 
@@ -37,7 +37,7 @@ const Hero = () => {
                   I am proficient in&nbsp;<span>{"<"}</span>
                   &nbsp;
                 </p>
-                <Typewriter
+                <TypewriterComponent
                   options={{
                     cursor: " />",
                     strings: [
