@@ -11,7 +11,6 @@ export const Container = styled.div`
   max-width: 120rem;
   width: 90%;
   margin: 0 auto;
-  overflow: hidden;
 
   @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
     width: 95%;

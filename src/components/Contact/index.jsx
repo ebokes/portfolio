@@ -92,7 +92,7 @@ const Contact = () => {
           <Socials data-aos="zoom-in-up">
             <LinkedInWrapper>
               <a
-                href="linkedin.com/in/chibuokemegbuchulam"
+                href="https://linkedin.com/in/chibuokemegbuchulam"
                 target="_blank"
                 rel="noreferrer"
               >

@@ -3,22 +3,15 @@ import {
   Container,
   PageHeading,
   PageHeadingContainer,
+  Section,
 } from "../reuseableComponents/contentStyle";
 import avatar from "../../images/development-web-development-svgrepo-com.svg";
 import resume from "../../images/Chibuokem Egbuchulam Resume.pdf";
-import {
-  AboutSection,
-  AboutWrapper,
-  Cta,
-  Left,
-  ResumeBtn,
-  Right,
-  Text,
-} from "./aboutStyle";
+import { AboutWrapper, Cta, Left, ResumeBtn, Right, Text } from "./aboutStyle";
 
 const About = () => {
   return (
-    <AboutSection id="about">
+    <Section bgcolor="#2b2d42e3" id="about">
       <Container>
         <PageHeadingContainer>
           <PageHeading
@@ -67,7 +60,7 @@ const About = () => {
           </Right>
         </AboutWrapper>
       </Container>
-    </AboutSection>
+    </Section>
   );
 };
 

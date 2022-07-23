@@ -1,10 +1,5 @@
 import styled from "styled-components";
 import { LinkButton } from "../reuseableComponents/Button";
-import { Section } from "../reuseableComponents/contentStyle";
-
-export const AboutSection = styled(Section)`
-  background-color: #2b2d42e3;
-`;
 
 export const AboutWrapper = styled.div`
   display: flex;
