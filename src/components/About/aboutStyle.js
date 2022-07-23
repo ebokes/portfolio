@@ -28,15 +28,6 @@ export const Left = styled.div`
   }
 `;
 
-export const Right = styled.div`
-  width: 33rem;
-
-  img {
-    border-radius: 0.5rem;
-    width: 100%;
-  }
-`;
-
 export const Text = styled.div`
   padding: 2rem;
 
@@ -55,21 +46,30 @@ export const Cta = styled.div`
   justify-content: space-evenly;
 `;
 
-export const ProjectBtn = styled(LinkButton)`
+export const ResumeBtn = styled(LinkButton)`
   &:hover {
-    color: #fff;
-    border: 1px solid #0ba4e0;
+    color: #000;
+    border: 1px solid #feb72b;
+    font-weight: 500;
   }
 
   &::before {
     transform-origin: right;
-    background-color: #0ba4e0;
+    background-color: #feb72b;
     border-radius: 5px;
   }
 
   &:hover::before {
     transform-origin: left;
-    background-color: #0ba4e0;
+    background-color: #feb72b;
   }
 `;
-export const ResumeBtn = styled(ProjectBtn)``;
+
+export const Right = styled.div`
+  width: 33rem;
+
+  img {
+    border-radius: 0.5rem;
+    width: 100%;
+  }
+`;

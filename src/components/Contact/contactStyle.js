@@ -61,6 +61,16 @@ export const ContactWrapper = styled.div`
   }
 `;
 
+export const Left = styled.div`
+  width: 80%;
+  padding-top: 2rem;
+  margin: 0 auto;
+
+  @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+    width: 100%;
+  }
+`;
+
 export const InputWrapper = styled.div`
   margin-bottom: 2rem;
   width: 100%;
@@ -123,16 +133,6 @@ export const MessageStyle = styled.div`
       font-size: 1.4rem;
       color: #555;
     }
-  }
-`;
-
-export const Left = styled.div`
-  width: 80%;
-  padding-top: 2rem;
-  margin: 0 auto;
-
-  @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
-    width: 100%;
   }
 `;
 

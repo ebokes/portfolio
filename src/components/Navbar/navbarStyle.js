@@ -23,25 +23,6 @@ export const Header = styled.header`
   }
 `;
 
-export const Logo = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  width: 4.5rem;
-  height: 3.5rem;
-  color: #fff;
-  border: 0.2rem solid #fff;
-
-  h2 {
-    text-transform: uppercase;
-  }
-
-  ${({ navbar }) => navbar} {
-    /* border: 0.2rem solid #000; */
-  }
-`;
-
 export const NavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
@@ -71,6 +52,33 @@ export const NavContainer = styled.nav`
         padding: 0;
       }
     }
+  }
+`;
+
+export const Logo = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 4.5rem;
+  height: 3.5rem;
+  color: #fff;
+  border: 0.2rem solid #fff;
+
+  h2 {
+    text-transform: uppercase;
+  }
+
+  ${({ navbar }) => navbar} {
+    /* border: 0.2rem solid #000; */
+  }
+`;
+
+export const HamburgerStyle = styled.span`
+  display: none;
+
+  @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+    display: inline-block;
   }
 `;
 
@@ -107,47 +115,5 @@ export const ButtonLink = styled.a`
     transform: scaleX(1);
     background-color: #feb72b;
     /* transform-origin: left; */
-  }
-`;
-
-export const Hire = styled.a`
-  border: 1px solid #feb72b;
-  padding: 1rem 1.5rem;
-  text-decoration: none;
-  color: white;
-  border-radius: 1rem;
-  transition: all 0.6s;
-  position: relative;
-  z-index: 1;
-
-  &::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgb(254, 184, 43);
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 250ms ease-out;
-    z-index: -1;
-    border-radius: 0.9rem;
-    overflow: hidden;
-
-    transform: scaleX(0);
-    transform-origin: right;
-  }
-
-  &:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
-    color: #000;
-  }
-`;
-
-export const HamburgerStyle = styled.span`
-  display: none;
-
-  @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
-    display: inline-block;
   }
 `;

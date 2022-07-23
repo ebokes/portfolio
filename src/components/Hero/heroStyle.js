@@ -4,7 +4,6 @@ import study from "../../images/back10.jpg";
 import { LinkButton } from "../reuseableComponents/Button";
 import { VscArrowSmallDown } from "react-icons/vsc";
 import { Section } from "../reuseableComponents/contentStyle";
-import TypewriterComponent from "typewriter-effect";
 
 export const HeroSection = styled(Section)`
   background: url(${study});
@@ -92,12 +91,6 @@ export const TypewriterText = styled.span`
   }
 `;
 
-export const Typewriter = styled(TypewriterComponent)`
-  @media screen and (max-width: 293px) {
-    display: inline;
-  }
-`;
-
 export const ButtonWrapper = styled.div`
   height: 5rem;
   /* width: 100%; */
@@ -148,11 +141,6 @@ export const ProjectBtn = styled(LinkButton)`
   }
 `;
 
-export const Mouse = styled(BsMouse)``;
-export const Arrow = styled(VscArrowSmallDown)`
-  font-size: 2rem;
-`;
-
 export const MouseDownWrapper = styled.a`
   display: flex;
   flex-direction: column;
@@ -179,10 +167,7 @@ export const MouseDownWrapper = styled.a`
   }
 `;
 
-// export const ButtonGroup = styled.span`
-//   display: flex;
-
-//   @media screen and (max-width: ${({ theme }) => theme.screens.xsm}) {
-//     flex-direction: column;
-//   }
-// `;
+export const Mouse = styled(BsMouse)``;
+export const Arrow = styled(VscArrowSmallDown)`
+  font-size: 2rem;
+`;
