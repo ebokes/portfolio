@@ -41,13 +41,13 @@ const Hero = () => {
                   options={{
                     cursor: " />",
                     strings: [
-                      "html",
-                      "css",
-                      "javascript",
-                      "reactjs",
-                      "sass",
-                      "tailwindcss",
-                      "styled-components",
+                      "HTML",
+                      "CSS",
+                      "Javascript",
+                      "ReactJs",
+                      "Sass",
+                      "TailwindCSS",
+                      "Styled-Components",
                     ],
                     autoStart: true,
                     loop: true,
@@ -63,8 +63,10 @@ const Hero = () => {
         </HeroContentsWrapper>
       </Container>
       <MouseDownWrapper href="#about">
-        <Mouse />
-        <Arrow />
+        <div>
+          <Mouse />
+          <Arrow />
+        </div>
       </MouseDownWrapper>
     </HeroSection>
   );

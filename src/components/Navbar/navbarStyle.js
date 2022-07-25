@@ -108,12 +108,10 @@ export const ButtonLink = styled.a`
     left: 0;
     transition: transform 250ms ease-in;
     transform: scaleX(0);
-    /* transform-origin: right; */
   }
 
   &:hover::before {
     transform: scaleX(1);
     background-color: #feb72b;
-    /* transform-origin: left; */
   }
 `;

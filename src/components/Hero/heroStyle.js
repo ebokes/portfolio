@@ -93,20 +93,19 @@ export const TypewriterText = styled.span`
 
 export const ButtonWrapper = styled.div`
   height: 5rem;
-  /* width: 100%; */
 
   @media screen and (max-width: 293px) {
     display: flex;
     width: fit-content;
     justify-content: center;
     justify-self: center;
-    /* align-items: center; */
     flex-direction: column;
   }
 `;
 
 export const GetInTouchBtn = styled(LinkButton)`
   margin-right: 5rem;
+  font-family: "Ubuntu", sans-serif;
 
   @media screen and (max-width: 293px) {
     width: 100%;
@@ -119,6 +118,7 @@ export const GetInTouchBtn = styled(LinkButton)`
 export const ProjectBtn = styled(LinkButton)`
   border: 0.1rem solid #feb72b;
   color: #feb72b;
+  font-family: "Ubuntu", sans-serif;
 
   @media screen and (max-width: 293px) {
     width: 100%;
@@ -128,7 +128,6 @@ export const ProjectBtn = styled(LinkButton)`
   &:hover {
     color: #000;
     border: 0.1rem solid #ea9e05;
-    font-weight: 600;
   }
 
   &::before {
@@ -142,17 +141,24 @@ export const ProjectBtn = styled(LinkButton)`
 `;
 
 export const MouseDownWrapper = styled.a`
+  position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  color: #fff;
-  font-size: 4rem;
-  opacity: 0.2;
-  animation: bounce 1.5s infinite ease-out;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0.1rem;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 4rem;
+    opacity: 0.2;
+    animation: bounce 1.5s infinite ease-out;
+  }
 
   @keyframes bounce {
     0% {

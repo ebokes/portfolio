@@ -10,25 +10,25 @@ const servicesData = [
     id: 1,
     icon: <RiCodeView size={35} color="#002f87" />,
     title: "Web Development",
-    body: "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
+    body: "Be it a simple single static page of plain text to complex web applications, electronic businesses, and social network services",
   },
   {
     id: 2,
     icon: <IoIosApps size={35} color="#002f87" />,
     title: "Web Apps",
-    body: "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
+    body: "The user interface of your web application is built according to your specifications. The web apps are compatible across browsers as well as viewports",
   },
   {
     id: 3,
     icon: <FaPaintBrush size={35} color="#002f87" />,
     title: "Branding",
-    body: "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
+    body: "The outlook of you website is tailored to suit your requirement and needs.",
   },
   {
     id: 4,
     icon: <MdOutlineDevices size={35} color="#002f87" />,
     title: "Responsive layout",
-    body: "Be it a desktop, laptop, tablet or mobile device, I build responsive websites to adapt to the size of your devices. ",
+    body: "Webpages automatically adjust and adapt to the screen size and viewport of any device.",
   },
   {
     id: 5,
@@ -40,7 +40,7 @@ const servicesData = [
     id: 6,
     icon: <ImUserCheck size={35} color="#002f87" />,
     title: "User friendly",
-    body: "I build websites that is easily accessible and understandable for any user",
+    body: "Users can easily understand and navigate through the application in an efficient way",
   },
 ];
 export default servicesData;

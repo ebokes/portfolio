@@ -11,6 +11,7 @@ import {
   Col2,
   LiveIcon,
   Overlay,
+  Bullet,
   ProjectImgWrapper,
   ProjectWrapper,
   Row,
@@ -56,14 +57,17 @@ const Project = () => {
                   <p>{item.text}</p>
                 </div>
                 <div>
-                  <h4>Challenge this project solves</h4>
+                  <h4>Features of this project</h4>
                   <p>{item.text1}</p>
                 </div>
                 <div>
                   <h4>Tech stack</h4>
                   <span>
                     {item.stack.map((tech, index) => (
-                      <p key={index}>{tech}</p>
+                      <p key={index}>
+                        <Bullet />
+                        {tech}
+                      </p>
                     ))}
                   </span>
                 </div>

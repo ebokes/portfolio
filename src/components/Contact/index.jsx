@@ -8,6 +8,7 @@ import {
   LinkedInWrapper,
   MessageStyle,
   Socials,
+  ContactSection,
 } from "./contactStyle";
 import { RiLinkedinFill, RiGithubFill } from "react-icons/ri";
 import { InputData } from "./InputData";
@@ -15,7 +16,6 @@ import {
   Container,
   PageHeading,
   PageHeadingContainer,
-  Section,
 } from "../reuseableComponents/contentStyle";
 import Popup from "../Popup";
 import { send } from "emailjs-com";
@@ -52,7 +52,7 @@ const Contact = () => {
     console.log(formInfo);
   };
   return (
-    <Section id="contact">
+    <ContactSection id="contact">
       <Container>
         <ContactWrapper>
           <Left>
@@ -113,7 +113,7 @@ const Contact = () => {
         </ContactWrapper>
         {popup && <Popup />}
       </Container>
-    </Section>
+    </ContactSection>
   );
 };
 

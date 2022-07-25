@@ -32,6 +32,10 @@ export const Text = styled.div`
   padding: 2rem;
 
   p {
+    line-height: 2.8rem;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.8rem;
+
     &:not(:last-child) {
       margin-bottom: 1rem;
     }
@@ -47,10 +51,10 @@ export const Cta = styled.div`
 `;
 
 export const ResumeBtn = styled(LinkButton)`
+  font-family: "Ubuntu", sans-serif;
   &:hover {
     color: #000;
     border: 1px solid #feb72b;
-    font-weight: 500;
   }
 
   &::before {

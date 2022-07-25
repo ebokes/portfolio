@@ -9,10 +9,8 @@ export const FooterWrapper = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media screen and (max-width: ${({ theme }) => theme.screens.xsm}) {
-    flex-direction: column;
-  }
+  flex-direction: column;
+  line-height: 1.5;
 
   p {
     color: #fff;

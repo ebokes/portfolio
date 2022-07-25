@@ -9,15 +9,12 @@ const Footer = () => {
     <FooterSection id="footer" bgcolor={green1}>
       <Container>
         <FooterWrapper>
-          <span>
-            <p>Copyright &copy; 2022</p>
-          </span>
-          <Spacer>
-            <p>|</p>
-          </Spacer>
-          <span>
+          <div>
+            <p>&copy; 2022. All Rights Reserved</p>
+          </div>
+          <div>
             <p>Designed & Built by Chibuokem Egbuchulam</p>
-          </span>
+          </div>
         </FooterWrapper>
       </Container>
     </FooterSection>

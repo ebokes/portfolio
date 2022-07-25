@@ -18,7 +18,6 @@ export const CardWrapper = styled.div`
 `;
 export const Card = styled.div`
   padding: 3rem;
-  /* width: 30%; */
   border: 1px solid #ddd;
   transition: all 0.5s;
   margin: 1rem 1rem;

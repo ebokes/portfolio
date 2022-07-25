@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { HiCode } from "react-icons/hi";
+import { HiCode, HiBadgeCheck } from "react-icons/hi";
 import { CgScreen } from "react-icons/cg";
 
 export const ProjectWrapper = styled.div`
@@ -11,10 +11,11 @@ export const Row = styled.div`
   gap: 3%;
   background-color: #e3e3e6;
   width: 80%;
-  padding: 3rem 2rem 5rem;
+  padding: 3rem 2rem 3rem;
   box-shadow: 0 0 15px 3px #0000006a;
   align-items: center;
-  margin: 4rem auto;
+  margin: 0rem auto 5rem auto;
+
   flex-direction: ${({ fd }) => fd || "row"};
 
   @media screen and (max-width: ${({ theme }) => theme.screens.lg}) {
@@ -71,17 +72,11 @@ export const ProjectImgWrapper = styled.div`
 `;
 
 export const Overlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   color: #fff;
   display: flex;
   align-self: center;
   justify-content: center;
   z-index: 2;
-  /* opacity: 0; */
   transition: all 0.5s ease-out 0.3s;
 
   &:hover {
@@ -101,13 +96,11 @@ export const Overlay = styled.div`
   span {
     position: absolute;
     bottom: -4rem;
-    /* left: 0; */
     width: 10rem;
     flex-direction: row;
     display: flex;
     gap: 2rem;
     justify-content: center;
-    /* align-items: center; */
 
     :hover {
       opacity: 1;
@@ -146,13 +139,20 @@ export const Col2 = styled.div`
     margin-bottom: 2rem;
   }
   span p {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     margin-right: 0.5rem;
     padding: 0.3rem 1.2rem 0.5rem 1.2rem;
     background: #064797;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     color: #fff;
     margin-bottom: 0.5rem;
-    margin-top: 0.7rem;
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
   }
+`;
+
+export const Bullet = styled(HiBadgeCheck)`
+  color: #feb72b;
+  margin-right: 0.3rem;
 `;

@@ -1,16 +1,17 @@
 import React from "react";
 import {
   TechStackWrapper,
-  Stack,
   TechStackSection,
   Tech,
   Tools,
+  Languages,
+  Libraries,
 } from "./techStackStyle";
-import { TechData, ToolData } from "./techStackData";
+import { LibrariesData, TechData, ToolData } from "./techStackData";
 import {
   Container,
-  PageHeading,
   PageHeadingContainer,
+  SubHeading,
 } from "../reuseableComponents/contentStyle";
 
 const TechStack = () => {
@@ -18,11 +19,9 @@ const TechStack = () => {
     <TechStackSection id="tech-stack">
       <Container>
         <TechStackWrapper>
-          <Stack>
+          <Languages>
             <PageHeadingContainer>
-              <PageHeading data-aos="zoom-out" color="#fff">
-                Tech Stack
-              </PageHeading>
+              <SubHeading data-aos="zoom-out">Languages</SubHeading>
             </PageHeadingContainer>
             <Tech data-aos="zoom-in">
               {TechData.map((tech) => (
@@ -32,12 +31,25 @@ const TechStack = () => {
                 </figure>
               ))}
             </Tech>
-          </Stack>
+          </Languages>
+          <Libraries>
+            <PageHeadingContainer>
+              <SubHeading data-aos="zoom-out">
+                Libraries and Frameworks
+              </SubHeading>
+            </PageHeadingContainer>
+            <Tech data-aos="zoom-in">
+              {LibrariesData.map((tech) => (
+                <figure key={tech.id}>
+                  <img src={tech.src} alt={tech.alt} />
+                  <figcaption>{tech.caption}</figcaption>
+                </figure>
+              ))}
+            </Tech>
+          </Libraries>
           <Tools>
             <PageHeadingContainer>
-              <PageHeading data-aos="zoom-out" color="#fff">
-                Tools
-              </PageHeading>
+              <SubHeading data-aos="zoom-out">Tools</SubHeading>
             </PageHeadingContainer>
             <Tech data-aos="zoom-in">
               {ToolData.map((tech) => (
