@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "../reuseableComponents/contentStyle";
-import { FooterSection, FooterWrapper, Spacer } from "./footerStyle";
+import { FooterSection, FooterWrapper } from "./footerStyle";
 
 const green1 = ({ theme }) => theme.color.green1;
 

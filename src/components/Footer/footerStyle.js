@@ -18,10 +18,3 @@ export const FooterWrapper = styled.footer`
     margin: 0 0.2rem;
   }
 `;
-
-export const Spacer = styled.span`
-  @media screen and (max-width: ${({ theme }) => theme.screens.xsm}) {
-    visibility: hidden;
-    font-size: 0.5rem;
-  }
-`;

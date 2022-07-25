@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-const blue = ({ theme }) => theme.color.green1;
-
 export const LinkButton = styled.a`
   padding: 1rem 2rem;
   text-transform: uppercase;
