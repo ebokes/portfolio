@@ -142,6 +142,13 @@ export const MessageStyle = styled.div`
   }
 `;
 
+export const SocialsWrapper = styled.div`
+  @media screen and (max-width: ${({ theme }) => theme.screens.sm}) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+`;
 export const Socials = styled.div`
   position: fixed;
   right: 1rem;
@@ -151,6 +158,7 @@ export const Socials = styled.div`
   align-items: center;
   height: 22rem;
   justify-content: space-between;
+  margin-top: 3rem;
 
   @media screen and (max-width: ${({ theme }) => theme.screens.lg}) {
     height: fit-content;
@@ -164,10 +172,10 @@ export const Socials = styled.div`
   }
 
   @media screen and (max-width: ${({ theme }) => theme.screens.sm}) {
-    position: absolute;
-    bottom: -7rem;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    /* bottom: -7rem; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
     flex-direction: row;
     width: 10rem;
     justify-content: space-between;

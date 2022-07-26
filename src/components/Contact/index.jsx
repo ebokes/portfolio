@@ -9,6 +9,7 @@ import {
   MessageStyle,
   Socials,
   ContactSection,
+  SocialsWrapper,
 } from "./contactStyle";
 import { RiLinkedinFill, RiGithubFill } from "react-icons/ri";
 import { InputData } from "./InputData";
@@ -87,27 +88,29 @@ const Contact = () => {
               </MessageStyle>
               <button type="submit">Submit</button>
             </form>
-            <Socials data-aos="zoom-in-up">
-              <GithubWrapper>
-                <a
-                  href="https://github.com/ebokes"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <RiGithubFill size={45} />
-                </a>
-              </GithubWrapper>
-              <LinkedInWrapper>
-                <a
-                  href="https://linkedin.com/in/chibuokemegbuchulam"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <RiLinkedinFill size={30} color="#00102e" />
-                </a>
-              </LinkedInWrapper>
-              <Line />
-            </Socials>
+            <SocialsWrapper>
+              <Socials data-aos="zoom-in-up">
+                <GithubWrapper>
+                  <a
+                    href="https://github.com/ebokes"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <RiGithubFill size={45} />
+                  </a>
+                </GithubWrapper>
+                <LinkedInWrapper>
+                  <a
+                    href="https://linkedin.com/in/chibuokemegbuchulam"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <RiLinkedinFill size={30} color="#00102e" />
+                  </a>
+                </LinkedInWrapper>
+                <Line />
+              </Socials>
+            </SocialsWrapper>
           </Left>
         </ContactWrapper>
         {popup && <Popup />}
