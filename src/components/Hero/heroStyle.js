@@ -91,6 +91,13 @@ export const TypewriterText = styled.span`
   }
 `;
 
+export const Row = styled.div`
+  @media screen and (max-width: 293px) {
+    display: flex;
+    justify-content: center;
+  }
+`;
+
 export const ButtonWrapper = styled.div`
   height: 5rem;
 
@@ -100,6 +107,7 @@ export const ButtonWrapper = styled.div`
     justify-content: center;
     justify-self: center;
     flex-direction: column;
+    width: 18rem;
   }
 `;
 
@@ -111,6 +119,7 @@ export const GetInTouchBtn = styled(LinkButton)`
     width: 100%;
     margin-top: 2rem;
   }
+
   &:hover {
     color: #000;
   }

@@ -13,6 +13,7 @@ import {
   MouseDownWrapper,
   Arrow,
   HeroContentsWrapper,
+  Row,
 } from "./heroStyle";
 
 const Hero = () => {
@@ -47,7 +48,7 @@ const Hero = () => {
                       "ReactJs",
                       "Sass",
                       "TailwindCSS",
-                      "Styled-Components",
+                      "Styled-Comps",
                     ],
                     autoStart: true,
                     loop: true,
@@ -55,10 +56,12 @@ const Hero = () => {
                 />
               </TypewriterText>
             </IntroBody>
-            <ButtonWrapper data-aos="fade-up">
-              <GetInTouchBtn href="#contact">Get in touch</GetInTouchBtn>
-              <ProjectBtn href="#projects">Projects</ProjectBtn>
-            </ButtonWrapper>
+            <Row>
+              <ButtonWrapper data-aos="fade-up">
+                <GetInTouchBtn href="#contact">Get in touch</GetInTouchBtn>
+                <ProjectBtn href="#projects">Projects</ProjectBtn>
+              </ButtonWrapper>
+            </Row>
           </HeroContents>
         </HeroContentsWrapper>
       </Container>

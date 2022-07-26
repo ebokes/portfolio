@@ -9,12 +9,17 @@ export const ContactSection = styled(Section)`
   background-attachment: fixed;
   background-position: center;
   box-shadow: inset 0 0 0 1000px #00102ecc;
+
+  @media screen and (max-width: ${({ theme }) => theme.screens.sm}) {
+    height: 75rem;
+  }
 `;
 
 export const ContactWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 1rem 0;
+  position: relative;
 
   form {
     display: flex;
@@ -72,6 +77,7 @@ export const Left = styled.div`
   width: 80%;
   padding-top: 2rem;
   margin: 0 auto;
+  position: relative;
 
   @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
     width: 100%;
@@ -143,23 +149,46 @@ export const Socials = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 22rem;
+  justify-content: space-between;
 
   @media screen and (max-width: ${({ theme }) => theme.screens.lg}) {
-    display: none;
+    height: fit-content;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    flex-direction: row;
+    width: 10rem;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.screens.sm}) {
+    position: absolute;
+    bottom: -7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    width: 10rem;
+    justify-content: space-between;
   }
 `;
 
 export const Line = styled.div`
   border-left: 1px solid #fff;
   height: 12rem;
+  z-index: 21;
+
+  @media screen and (max-width: ${({ theme }) => theme.screens.lg}) {
+    display: none;
+  }
 `;
 
 export const SocialIcons = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 
   a {
     text-decoration: none;
@@ -173,11 +202,20 @@ export const SocialIcons = styled.div`
 `;
 
 export const LinkedInWrapper = styled(SocialIcons)`
-  width: 4rem;
-  height: 4rem;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   color: blue;
   background-color: #fff;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.screens.lg}) {
+    margin-bottom: 0.5rem;
+  }
 `;
 
 export const GithubWrapper = styled(SocialIcons)``;

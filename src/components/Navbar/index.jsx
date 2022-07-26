@@ -1,6 +1,5 @@
 import * as React from "react";
 import { useState } from "react";
-// import ClickAwayListener from "@mui/material/ClickAwayListener";
 import { ClickAwayListener } from "@material-ui/core";
 import {
   Header,
@@ -11,6 +10,7 @@ import {
   Menu,
 } from "./navbarStyle";
 import { Sling as Hamburger } from "hamburger-react";
+import navData from "./navbarData";
 
 const Navbar = () => {
   const [navColor, setNavColor] = useState(false);
@@ -28,9 +28,7 @@ const Navbar = () => {
   return (
     <ClickAwayListener onClickAway={handleClickAway}>
       <Header navbar={navColor}>
-        <NavContainer
-        // data-aos="zoom-out"
-        >
+        <NavContainer data-aos="zoom-out">
           <Logo href="#home" navbar={navColor}>
             <h2>ce</h2>
           </Logo>
@@ -45,52 +43,13 @@ const Navbar = () => {
             />
           </HamburgerStyle>
           <Menu isOpen={isOpen} id="navbar">
-            <li>
-              <ButtonLink onClick={handleClose} navbar={navColor} href="#home">
-                Home
-              </ButtonLink>
-            </li>
-            <li>
-              <ButtonLink onClick={handleClose} navbar={navColor} href="#about">
-                About
-              </ButtonLink>
-            </li>
-            <li>
-              <ButtonLink
-                onClick={handleClose}
-                navbar={navColor}
-                href="#services"
-              >
-                Services
-              </ButtonLink>
-            </li>
-            <li>
-              <ButtonLink
-                onClick={handleClose}
-                navbar={navColor}
-                href="#tech-stack"
-              >
-                Tech Stack
-              </ButtonLink>
-            </li>
-            <li>
-              <ButtonLink
-                onClick={handleClose}
-                navbar={navColor}
-                href="#projects"
-              >
-                Projects
-              </ButtonLink>
-            </li>
-            <li>
-              <ButtonLink
-                onClick={handleClose}
-                navbar={navColor}
-                href="#contact"
-              >
-                Contact
-              </ButtonLink>
-            </li>
+            {navData.map(({ id, title, link }) => (
+              <li key={id}>
+                <ButtonLink onClick={handleClose} navbar={navColor} href={link}>
+                  {title}
+                </ButtonLink>
+              </li>
+            ))}
           </Menu>
         </NavContainer>
       </Header>

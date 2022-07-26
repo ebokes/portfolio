@@ -16,5 +16,9 @@ export const FooterWrapper = styled.footer`
     color: #fff;
     text-align: center;
     margin: 0 0.2rem;
+
+    span {
+      color: #feb72b;
+    }
   }
 `;

@@ -64,7 +64,6 @@ const Contact = () => {
             <form data-aos="zoom-in" onSubmit={onSubmit}>
               {InputData.map((input) => (
                 <InputWrapper key={input.id}>
-                  {/* <label htmlFor={input.name}>{input.label}:</label> */}
                   <input
                     placeholder={input.placeholder}
                     name={input.name}
@@ -88,28 +87,28 @@ const Contact = () => {
               </MessageStyle>
               <button type="submit">Submit</button>
             </form>
+            <Socials data-aos="zoom-in-up">
+              <GithubWrapper>
+                <a
+                  href="https://github.com/ebokes"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <RiGithubFill size={45} />
+                </a>
+              </GithubWrapper>
+              <LinkedInWrapper>
+                <a
+                  href="https://linkedin.com/in/chibuokemegbuchulam"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <RiLinkedinFill size={30} color="#00102e" />
+                </a>
+              </LinkedInWrapper>
+              <Line />
+            </Socials>
           </Left>
-          <Socials data-aos="zoom-in-up">
-            <LinkedInWrapper>
-              <a
-                href="https://linkedin.com/in/chibuokemegbuchulam"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <RiLinkedinFill size={30} color="#00102e" />
-              </a>
-            </LinkedInWrapper>
-            <GithubWrapper>
-              <a
-                href="https://github.com/ebokes"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <RiGithubFill size={45} />
-              </a>
-            </GithubWrapper>
-            <Line />
-          </Socials>
         </ContactWrapper>
         {popup && <Popup />}
       </Container>
