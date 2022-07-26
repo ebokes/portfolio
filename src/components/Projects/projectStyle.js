@@ -11,9 +11,9 @@ export const Row = styled.div`
   gap: 3%;
   background-color: #e3e3e6;
   width: 80%;
-  padding: 3rem 2rem 3rem;
+  padding: 3rem 2rem 4rem;
   box-shadow: 0 0 15px 3px #0000006a;
-  align-items: center;
+  align-items: flex-start;
   margin: 0rem auto 5rem auto;
 
   flex-direction: ${({ fd }) => fd || "row"};

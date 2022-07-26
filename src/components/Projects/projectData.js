@@ -1,6 +1,7 @@
 import surftweb from "../../images/project1.png";
 import nailBoutique from "../../images/project2.png";
 import quizbee from "../../images/project3.png";
+import portfolio from "../../images/project4.png";
 const projectData = [
   {
     id: 1,
@@ -35,6 +36,17 @@ const projectData = [
     stack: ["HTML", "CSS", "React"],
     code: "https://github.com/ebokes/quiz_bee",
     live: "https://ebokes.github.io/quiz_bee/",
+  },
+  {
+    id: 4,
+    img: portfolio,
+    title: "Portfolio",
+    text: "A simple website that showcases my experience, work, profile, technology stack amongst other information",
+    text1:
+      "This project was built with ReactJs in tandem with Styled-components to have a simple, clean, easy to navigate and user friendly interface",
+    stack: ["HTML", "React", "Styled-Components", "MUI"],
+    code: "https://github.com/ebokes/portfolio",
+    live: "https://chibuokemegbuchulam.netlify.app/",
   },
 ];
 export default projectData;

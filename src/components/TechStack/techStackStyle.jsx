@@ -22,12 +22,7 @@ export const TechStackWrapper = styled.div`
   }
 `;
 
-export const Stack = styled.div`
-  @media screen and (max-width: ${({ theme }) => theme.screens.sm}) {
-    flex-direction: column;
-    width: 100%;
-  }
-`;
+export const Stack = styled.div``;
 export const Languages = styled(Stack)``;
 export const Libraries = styled(Stack)``;
 export const Tools = styled(Stack)``;
@@ -35,12 +30,11 @@ export const Tools = styled(Stack)``;
 export const Tech = styled.div`
   display: flex;
   justify-content: center;
-  flex: 1;
+  /* flex: 1; */
   flex-wrap: wrap;
   padding-top: 2rem;
   margin-bottom: 4rem;
   font-size: 1.5rem;
-  box-shadow: 0rem 0rem 0.7rem 0.1rem rgba(0, 0, 0, 0.237);
 
   figure {
     display: flex;
