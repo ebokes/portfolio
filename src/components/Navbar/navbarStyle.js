@@ -33,13 +33,41 @@ export const NavContainer = styled.nav`
   @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
     width: 95%;
   }
+`;
 
-  ul {
+export const Menu = styled.ul`
+  display: none;
+  /* mobile */
+  @media screen and (max-width: ${({ theme }) => theme.screens.lg}) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 7rem;
+    right: 0;
+    background-color: #00102e;
+    padding-left: 2rem;
+    height: 100rem;
+
+    li {
+      padding: 0;
+      width: 19rem;
+      line-height: 2.5rem;
+      padding: 1rem;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #999;
+      }
+    }
+  }
+
+  /* Desktop */
+  ${({ isOpen }) => isOpen} {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+    @media screen and (max-width: ${({ theme }) => theme.screens.lg}) {
       display: none;
     }
 
@@ -47,10 +75,7 @@ export const NavContainer = styled.nav`
       &:not(:last-child) {
         padding-right: 2.5rem;
       }
-
-      @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
-        padding: 0;
-      }
+      text-transform: uppercase;
     }
   }
 `;
@@ -77,7 +102,7 @@ export const Logo = styled.a`
 export const HamburgerStyle = styled.span`
   display: none;
 
-  @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+  @media screen and (max-width: ${({ theme }) => theme.screens.lg}) {
     display: inline-block;
   }
 `;
@@ -113,5 +138,9 @@ export const ButtonLink = styled.a`
   &:hover::before {
     transform: scaleX(1);
     background-color: #feb72b;
+
+    @media screen and (max-width: ${({ theme }) => theme.screens.lg}) {
+      transform: scaleX(0);
+    }
   }
 `;
