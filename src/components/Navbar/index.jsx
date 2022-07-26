@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
-import { ClickAwayListener } from "@material-ui/core";
+import ClickAwayListener from "@mui/material/ClickAwayListener";
 import {
   Header,
   NavContainer,

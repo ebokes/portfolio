@@ -10,7 +10,7 @@ const servicesData = [
     id: 1,
     icon: <RiCodeView size={35} color="#002f87" />,
     title: "Web Development",
-    body: "Be it a simple single static page of plain text to complex web applications, electronic businesses, and social network services",
+    body: "Be it a simple single static page or complex web applications, we've got you covered",
   },
   {
     id: 2,

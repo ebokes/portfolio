@@ -9,7 +9,7 @@ const projectData = [
     title: "Nail Boutique",
     text: "Nail Boutique is a beauty brand that offers nail, hair and skin care services to her clients.",
     text1:
-      "This web application includes location selection, shopping cart, appointment scheduling features that enables a new client or returning client create reservation for an appointment at a specified date",
+      "This web application was built to include location selection, shopping cart, appointment scheduling features that enables a new client or returning client create reservation for an appointment at a specified date",
     stack: ["React", "MUI", "Styled-Components", "Context-API"],
     code: "https://github.com/Meldy2503/nail-boutique",
     live: "https://nail-boutique.netlify.app/",
@@ -20,7 +20,7 @@ const projectData = [
     title: "Surftweb",
     text: "Surftweb is a simple multiple page website that is a front for a web development company that renders digital products & services to small, medium and large scale businesses.",
     text1:
-      "It is implemented with Reactjs and has some features like toggles, routing, animation and it has a responsive layout",
+      "It is implemented with Reactjs and has some features like toggles, routing, animation. It has a responsive layout",
     stack: ["React", "Styled-Components", "MUI"],
     code: "https://github.com/ebokes/surftweb",
     live: "https://confident-murdock-227ea6.netlify.app/",
