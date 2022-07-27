@@ -1,5 +1,5 @@
 import React from "react";
-import thanks from "../../images/thanks.gif";
+import thanks from "../../assets/thanks.gif";
 import { PopupMessage, Container, PopupButton } from "./popupStyle";
 
 const Popup = () => {

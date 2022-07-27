@@ -1,6 +1,6 @@
 import { BsMouse } from "react-icons/bs";
 import styled from "styled-components";
-import study from "../../images/back10.jpg";
+import study from "../../assets/back10.jpg";
 import { LinkButton } from "../reuseableComponents/Button";
 import { VscArrowSmallDown } from "react-icons/vsc";
 import { Section } from "../reuseableComponents/contentStyle";

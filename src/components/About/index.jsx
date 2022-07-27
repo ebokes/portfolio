@@ -5,8 +5,8 @@ import {
   PageHeadingContainer,
   Section,
 } from "../reuseableComponents/contentStyle";
-import avatar from "../../images/development-web-development-svgrepo-com.svg";
-import resume from "../../images/Chibuokem Egbuchulam Resume.pdf";
+import avatar from "../../assets/development-web-development-svgrepo-com.svg";
+import resume from "../../assets/Chibuokem Egbuchulam Resume.pdf";
 import { AboutWrapper, Cta, Left, ResumeBtn, Right, Text } from "./aboutStyle";
 
 const About = () => {

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Section } from "../reuseableComponents/contentStyle";
-import bg from "../../images/back2.jpg";
+import bg from "../../assets/back2.jpg";
 
 const blue = ({ theme }) => theme.color.green1;
 

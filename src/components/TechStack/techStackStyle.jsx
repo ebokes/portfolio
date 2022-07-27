@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Section } from "../reuseableComponents/contentStyle";
-import bg from "../../images/back6.jpg";
+import bg from "../../assets/back6.jpg";
 
 export const TechStackSection = styled(Section)`
   background: url(${bg});
