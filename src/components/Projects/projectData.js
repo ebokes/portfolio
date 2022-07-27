@@ -1,7 +1,7 @@
-import surftweb from "../../assets/project1.png";
-import nailBoutique from "../../assets/project2.png";
-import quizbee from "../../assets/project3.png";
-import portfolio from "../../assets/project4.png";
+import surftweb from "../../assets/project1.jpg";
+import nailBoutique from "../../assets/project2.jpg";
+import quizbee from "../../assets/project3.jpg";
+import portfolio from "../../assets/project4.jpg";
 const projectData = [
   {
     id: 1,
