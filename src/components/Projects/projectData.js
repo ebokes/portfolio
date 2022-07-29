@@ -2,6 +2,8 @@ import surftweb from "../../assets/project1.jpg";
 import nailBoutique from "../../assets/project2.jpg";
 import quizbee from "../../assets/project3.jpg";
 import portfolio from "../../assets/project4.jpg";
+import crypto from "../../assets/crypto.jpg";
+
 const projectData = [
   {
     id: 1,
@@ -23,7 +25,7 @@ const projectData = [
       "It is implemented with Reactjs and has some features like toggles, routing, animation. It has a responsive layout",
     stack: ["React", "Styled-Components", "MUI"],
     code: "https://github.com/ebokes/surftweb",
-    live: "https://confident-murdock-227ea6.netlify.app/",
+    live: "https://surftweb.netlify.app/",
   },
 
   {
@@ -32,13 +34,24 @@ const projectData = [
     title: "QuizBee",
     text: "A simple web game application with questions and answers to these questions.",
     text1:
-      'There are 5 random questions displayed to the user at the beginning of every session, as well as 4 options for each questions. Each question has a correct answer, which when selected, adds up to a total score. The total score is returned after all questions have been answered. A "play again" button restarts the game.',
+      "Five random questions are displayed to the user at the beginning of every session, four options are provided for each questions. Each question has a correct answer, which when selected, adds up to a total score. The total score is returned after all questions have been answered. ",
     stack: ["HTML", "CSS", "React"],
     code: "https://github.com/ebokes/quiz_bee",
     live: "https://ebokes.github.io/quiz_bee/",
   },
   {
     id: 4,
+    img: crypto,
+    title: "Crypto App",
+    text: "A crypto app tracker that displays current prices of crypto currencies",
+    text1:
+      "This project fetches data through an API to update the table and hence display logo, name, price, volume, etc of these curreencies. It also has a responsive layout",
+    stack: ["HTML", "CSS", "React"],
+    code: "https://github.com/ebokes/crypto_app",
+    live: "https://deft-gelato-c67e98.netlify.app/",
+  },
+  {
+    id: 5,
     img: portfolio,
     title: "Portfolio",
     text: "A simple website that showcases my experience, work, profile, technology stack amongst other information",
