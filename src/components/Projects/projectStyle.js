@@ -11,7 +11,7 @@ export const Row = styled.div`
   gap: 3%;
   background-color: #e3e3e6;
   width: 80%;
-  padding: 3rem 2rem 4rem;
+  padding: 3rem 2rem 2rem;
   box-shadow: 0 0 15px 3px #0000006a;
   align-items: flex-start;
   margin: 0rem auto 5rem auto;
@@ -64,53 +64,33 @@ export const ProjectImgWrapper = styled.div`
     transform-origin: bottom;
     opacity: 0.6;
   }
+
+  &:hover::before {
+    transform: scaleY(0);
+    background: linear-gradient(45deg, rgba(0, 16, 46), rgba(0, 31, 88));
+
+    @media screen and (max-width: ${({ theme }) => theme.screens.lg}) {
+      transform: scaleY(1);
+    }
+  }
 `;
 
-export const Overlay = styled.div`
-  color: #fff;
+export const Buttons = styled.span`
+  flex-direction: row;
   display: flex;
-  align-self: center;
+  gap: 2rem;
   justify-content: center;
-  z-index: 2;
-  transition: all 0.5s ease-out 0.3s;
+  margin-top: 1.5rem;
 
-  &:hover {
-    opacity: 1;
-  }
-
-  h1 {
-    top: 0;
-    right: 1rem;
-    font-size: 10rem;
-    font-weight: 900;
-    color: #ccc;
-    font-family: "Sarabun", sans-serif;
-    z-index: 2;
-  }
-
-  span {
-    position: absolute;
-    bottom: -4rem;
-    width: 10rem;
-    flex-direction: row;
+  a {
+    padding: 0.5rem 1rem;
+    background-color: #feb72b;
+    color: #000;
+    border-radius: 0.5rem;
     display: flex;
-    gap: 2rem;
-    justify-content: center;
-
-    :hover {
-      opacity: 1;
-    }
-
-    a {
-      padding: 0.5rem 1rem;
-      background-color: #feb72b;
-      color: #000;
-      border-radius: 0.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-right: 1rem;
-    }
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
   }
 `;
 
@@ -127,7 +107,7 @@ export const Col2 = styled.div`
 
   @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
     width: 100%;
-    margin-top: 4rem;
+    margin-top: 0.5rem;
   }
 
   div {

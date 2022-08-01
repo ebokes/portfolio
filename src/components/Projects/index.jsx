@@ -10,11 +10,11 @@ import {
   Col1,
   Col2,
   LiveIcon,
-  Overlay,
   Bullet,
   ProjectImgWrapper,
   ProjectWrapper,
   Row,
+  Buttons,
 } from "./projectStyle";
 import projectData from "./projectData";
 
@@ -35,21 +35,21 @@ const Project = () => {
               fd={item.id % 2 === 0 && "row-reverse"}
             >
               <Col1 data-aos="fade-down">
-                <ProjectImgWrapper>
-                  <img src={item.img} alt="project-img" />
-                  <Overlay>
-                    <span>
-                      <a target="_blank" rel="noreferrer" href={item.code}>
-                        <CodeIcon />
-                        Code
-                      </a>
-                      <a target="_blank" rel="noreferrer" href={item.live}>
-                        <LiveIcon />
-                        Live
-                      </a>
-                    </span>
-                  </Overlay>
-                </ProjectImgWrapper>
+                <a href={item.live}>
+                  <ProjectImgWrapper>
+                    <img src={item.img} alt="project-img" />
+                  </ProjectImgWrapper>
+                </a>
+                <Buttons>
+                  <a target="_blank" rel="noreferrer" href={item.code}>
+                    <CodeIcon />
+                    Code
+                  </a>
+                  <a target="_blank" rel="noreferrer" href={item.live}>
+                    <LiveIcon />
+                    Live
+                  </a>
+                </Buttons>
               </Col1>
               <Col2 data-aos="fade-up">
                 <div>
