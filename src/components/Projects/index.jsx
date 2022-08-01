@@ -34,7 +34,7 @@ const Project = () => {
               key={item.id}
               fd={item.id % 2 === 0 && "row-reverse"}
             >
-              <Col1 data-aos="fade-down">
+              <Col1 data-aos="fade-right">
                 <a href={item.live}>
                   <ProjectImgWrapper>
                     <img src={item.img} alt="project-img" />
@@ -51,7 +51,7 @@ const Project = () => {
                   </a>
                 </Buttons>
               </Col1>
-              <Col2 data-aos="fade-up">
+              <Col2 data-aos="fade-left">
                 <div>
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
