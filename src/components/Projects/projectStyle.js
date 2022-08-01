@@ -64,11 +64,6 @@ export const ProjectImgWrapper = styled.div`
     transform-origin: bottom;
     opacity: 0.6;
   }
-
-  &:hover::before {
-    transform: scaleY(0);
-    background: linear-gradient(45deg, rgba(0, 16, 46), rgba(0, 31, 88));
-  }
 `;
 
 export const Overlay = styled.div`

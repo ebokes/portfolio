@@ -10,7 +10,7 @@ const projectData = [
     title: "Nail Boutique",
     text: "Nail Boutique is a beauty brand that offers nail, hair and skin care services to her clients.",
     text1:
-      "This web application was built to include location selection, shopping cart, appointment scheduling features that enables a new client or returning client create reservation for an appointment at a specified date",
+      "This web application was built to include location selection, shopping cart, appointment scheduling features that enables a new client or returning client create reservation for an appointment at a specified date.",
     stack: ["React", "MUI", "Styled-Components", "Context-API"],
     code: "https://github.com/Meldy2503/nail-boutique",
     live: "https://nail-boutique.netlify.app/",
@@ -21,12 +21,11 @@ const projectData = [
     title: "Surftweb",
     text: "Surftweb is a simple multiple page website that is a front for a web development company that renders digital products & services to small, medium and large scale businesses.",
     text1:
-      "It is implemented with Reactjs and has some features like toggles, routing, animation. It has a responsive layout",
+      "It is implemented with Reactjs and has some features like toggles, routing, animation. It has a responsive layout.",
     stack: ["React", "Styled-Components", "MUI"],
     code: "https://github.com/ebokes/surftweb",
     live: "https://surftweb.netlify.app/",
   },
-
   {
     id: 3,
     img: quizbee,
@@ -42,9 +41,9 @@ const projectData = [
     id: 4,
     img: crypto,
     title: "Crypto App",
-    text: "A crypto app tracker that displays current prices of crypto currencies",
+    text: "A crypto app tracker that displays current prices of crypto currencies.",
     text1:
-      "This project fetches data through an API to update the table and hence display logo, name, price, volume, etc of these currencies. It also has a responsive layout",
+      "This project fetches data through an API to update the table and hence display logo, name, price, volume, etc of these currencies. It also has a responsive layout.",
     stack: ["HTML", "CSS", "React"],
     code: "https://github.com/ebokes/crypto_app",
     live: "https://deft-gelato-c67e98.netlify.app/",
