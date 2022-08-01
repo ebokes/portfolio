@@ -1,8 +1,7 @@
 import surftweb from "../../assets/project1.jpg";
 import nailBoutique from "../../assets/project2.jpg";
 import quizbee from "../../assets/project3.jpg";
-import portfolio from "../../assets/project4.jpg";
-import crypto from "../../assets/crypto.jpg";
+import crypto from "../../assets/project4.jpg";
 
 const projectData = [
   {
@@ -45,21 +44,10 @@ const projectData = [
     title: "Crypto App",
     text: "A crypto app tracker that displays current prices of crypto currencies",
     text1:
-      "This project fetches data through an API to update the table and hence display logo, name, price, volume, etc of these curreencies. It also has a responsive layout",
+      "This project fetches data through an API to update the table and hence display logo, name, price, volume, etc of these currencies. It also has a responsive layout",
     stack: ["HTML", "CSS", "React"],
     code: "https://github.com/ebokes/crypto_app",
     live: "https://deft-gelato-c67e98.netlify.app/",
-  },
-  {
-    id: 5,
-    img: portfolio,
-    title: "Portfolio",
-    text: "A simple website that showcases my experience, work, profile, technology stack amongst other information",
-    text1:
-      "This project was built with ReactJs in tandem with Styled-components to have a simple, clean, easy to navigate and user friendly interface",
-    stack: ["HTML", "React", "Styled-Components", "MUI"],
-    code: "https://github.com/ebokes/portfolio",
-    live: "https://chibuokemegbuchulam.netlify.app/",
   },
 ];
 export default projectData;
