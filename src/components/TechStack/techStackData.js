@@ -13,6 +13,7 @@ import netlify from "../../assets/netlify-svgrepo-com.svg";
 import bitbucket from "../../assets/bitbucket-svgrepo-com.svg";
 import figma from "../../assets/figma-svgrepo-com.svg";
 import codepen from "../../assets/codepen-icon-svgrepo-com.svg";
+import motion from "../../assets/Framer-motion.svg";
 
 export const TechData = [
   {
@@ -65,6 +66,12 @@ export const LibrariesData = [
     src: MaterialUi,
     alt: "MaterialUi icon",
     caption: "MaterialUi",
+  },
+  {
+    id: 6,
+    src: motion,
+    alt: "Framer-motion",
+    caption: "Framer-Motion",
   },
 ];
 
