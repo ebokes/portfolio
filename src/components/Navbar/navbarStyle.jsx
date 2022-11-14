@@ -42,7 +42,6 @@ export const Menu = styled.ul`
   display: none;
   text-transform: uppercase;
   z-index: 20;
-  margin-right: 5%;
 
   /* mobile */
   @media screen and (max-width: ${({ theme }) => theme.screens.lg}) {

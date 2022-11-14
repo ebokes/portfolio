@@ -30,9 +30,7 @@ const Navbar = () => {
     <ClickAwayListener onClickAway={handleClickAway}>
       <Header navbar={navColor}>
         <NavContainer>
-          <Nav
-          // data-aos="zoom-out"
-          >
+          <Nav data-aos="zoom-out">
             <Logo href="#home" navbar={navColor}>
               <h2>ce</h2>
             </Logo>
