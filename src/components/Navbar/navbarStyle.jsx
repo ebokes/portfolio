@@ -13,7 +13,7 @@ export const Header = styled.header`
   box-shadow: 0 0 1rem #000000a9;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   ${({ navbar }) => navbar} {
     background-color: transparent;
@@ -22,11 +22,20 @@ export const Header = styled.header`
   }
 `;
 
-export const NavContainer = styled.nav`
+export const NavContainer = styled.div`
+  max-width: 120rem;
+  width: 90%;
+  /* margin-left: 5%; */
+
+  @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
+    width: 95%;
+  }
+`;
+export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  margin: 0 auto;
 `;
 
 export const Menu = styled.ul`
@@ -41,8 +50,8 @@ export const Menu = styled.ul`
     justify-content: flex-start;
     flex-direction: column;
     position: absolute;
-    top: 6.12rem;
-    right: 0;
+    top: 7rem;
+    right: -0.5rem;
     background-color: rgb(0, 16, 46);
     padding-left: 2rem;
     height: 100vh;
@@ -77,7 +86,6 @@ export const Menu = styled.ul`
     display: flex;
     align-items: center;
     justify-content: center;
-    /* align-self: flex-end; */
     justify-self: flex-end;
 
     @media screen and (max-width: ${({ theme }) => theme.screens.lg}) {
@@ -101,11 +109,6 @@ export const Logo = styled.a`
   height: 3.5rem;
   color: #fff;
   border: 0.2rem solid #fff;
-  margin-left: 5%;
-
-  @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
-    margin-left: 2.5%;
-  }
 
   h2 {
     text-transform: uppercase;
@@ -118,14 +121,10 @@ export const Logo = styled.a`
 
 export const HamburgerStyle = styled.span`
   display: none;
-  padding-right: 4%;
   margin-right: 0;
 
   @media screen and (max-width: ${({ theme }) => theme.screens.lg}) {
     display: inline-block;
-  }
-  @media screen and (max-width: ${({ theme }) => theme.screens.md}) {
-    padding-right: 2%;
   }
 `;
 

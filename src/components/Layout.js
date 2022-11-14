@@ -1,16 +1,17 @@
-import React, { Fragment } from "react";
+import React from "react";
 import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Project from "./Projects";
+import { MainContainer } from "./reuseableComponents/contentStyle";
 import Services from "./Services";
 import TechStack from "./TechStack";
 
 const Layout = () => {
   return (
-    <Fragment>
+    <MainContainer>
       <Navbar />
       <Hero />
       <About />
@@ -19,7 +20,7 @@ const Layout = () => {
       <Project />
       <Contact />
       <Footer />
-    </Fragment>
+    </MainContainer>
   );
 };
 

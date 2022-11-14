@@ -3,11 +3,12 @@ import { useState } from "react";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
 import {
   Header,
-  NavContainer,
+  Nav,
   Logo,
   ButtonLink,
   HamburgerStyle,
   Menu,
+  NavContainer,
 } from "./navbarStyle";
 import { Sling as Hamburger } from "hamburger-react";
 import navData from "./navbarData";
@@ -28,29 +29,37 @@ const Navbar = () => {
   return (
     <ClickAwayListener onClickAway={handleClickAway}>
       <Header navbar={navColor}>
-        <NavContainer data-aos="zoom-out">
-          <Logo href="#home" navbar={navColor}>
-            <h2>ce</h2>
-          </Logo>
-          <HamburgerStyle>
-            <Hamburger
-              toggled={isOpen}
-              toggle={setOpen}
-              size={26}
-              rounded
-              label="Show menu"
-              padding={0}
-            />
-          </HamburgerStyle>
-          <Menu isOpen={isOpen} id="navbar">
-            {navData.map(({ id, title, link }) => (
-              <li key={id}>
-                <ButtonLink onClick={handleClose} navbar={navColor} href={link}>
-                  {title}
-                </ButtonLink>
-              </li>
-            ))}
-          </Menu>
+        <NavContainer>
+          <Nav
+          // data-aos="zoom-out"
+          >
+            <Logo href="#home" navbar={navColor}>
+              <h2>ce</h2>
+            </Logo>
+            <HamburgerStyle>
+              <Hamburger
+                toggled={isOpen}
+                toggle={setOpen}
+                size={26}
+                rounded
+                label="Show menu"
+                padding={0}
+              />
+            </HamburgerStyle>
+            <Menu isOpen={isOpen} id="navbar">
+              {navData.map(({ id, title, link }) => (
+                <li key={id}>
+                  <ButtonLink
+                    onClick={handleClose}
+                    navbar={navColor}
+                    href={link}
+                  >
+                    {title}
+                  </ButtonLink>
+                </li>
+              ))}
+            </Menu>
+          </Nav>
         </NavContainer>
       </Header>
     </ClickAwayListener>

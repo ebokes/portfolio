@@ -4,7 +4,8 @@ export const Section = styled.section`
   background-color: ${({ bgcolor }) => bgcolor};
   width: 100%;
   padding: 9rem 0 5rem 0;
-  overflow: hidden;
+  /* overflow: hidden; */
+  scroll-snap-align: start;
 `;
 
 export const Container = styled.div`
@@ -61,6 +62,13 @@ export const SubHeading = styled(PageHeading)`
   &:hover::before {
     height: 0.2rem;
   }
+`;
+
+export const MainContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 `;
 
 export const MainHeading = styled.h1`
