@@ -86,7 +86,9 @@ const Contact = () => {
                   required
                 />
               </MessageStyle>
-              <button type="submit">Submit</button>
+              <div>
+                <button type="submit">Submit</button>
+              </div>
             </form>
             <SocialsWrapper>
               <Socials data-aos="zoom-in-up">

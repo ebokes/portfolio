@@ -25,9 +25,19 @@ export const ContactWrapper = styled.div`
     display: flex;
     flex-direction: column;
     color: #000;
+    justify-content: center;
 
     label {
       font-size: 1.4rem;
+    }
+
+    div {
+      &:last-child {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5rem;
+      }
     }
 
     button {
@@ -41,6 +51,7 @@ export const ContactWrapper = styled.div`
       transition: all 0.6s;
       position: relative;
       z-index: 1;
+      font-size: 1.6rem;
 
       @media screen and (max-width: ${({ theme }) => theme.screens.sm}) {
         width: 100%;
@@ -61,7 +72,7 @@ export const ContactWrapper = styled.div`
         left: 0;
         transition: transform 250ms ease-in-out;
         transform: scaleX(0);
-        transform-origin: left;
+        transform-origin: center;
         z-index: -1;
       }
 
