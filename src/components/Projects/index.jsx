@@ -30,13 +30,11 @@ const Project = () => {
           </PageHeadingContainer>
           {projectData.map((item) => (
             <Row
-              // data-aos="zoom-out"
+              data-aos="zoom-out"
               key={item.id}
               fd={item.id % 2 === 0 && "row-reverse"}
             >
-              <Col1
-              // data-aos="fade-right"
-              >
+              <Col1 data-aos="fade-right">
                 <a target="_blank" rel="noreferrer" href={item.live}>
                   <ProjectImgWrapper>
                     <img src={item.img} alt="project-img" />
@@ -53,9 +51,7 @@ const Project = () => {
                   </a>
                 </Buttons>
               </Col1>
-              <Col2
-              // data-aos="fade-left"
-              >
+              <Col2 data-aos="fade-left">
                 <div>
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
