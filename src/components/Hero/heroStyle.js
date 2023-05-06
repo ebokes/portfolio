@@ -1,6 +1,6 @@
 import { BsMouse } from "react-icons/bs";
 import styled from "styled-components";
-import study from "../../assets/bg37.webp";
+import study from "../../assets/back5.webp";
 import { LinkButton } from "../reuseableComponents/Button";
 import { VscArrowSmallDown } from "react-icons/vsc";
 import { Section } from "../reuseableComponents/contentStyle";
@@ -11,7 +11,7 @@ export const HeroSection = styled(Section)`
   background-color: #00102e;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: left;
   background-attachment: fixed;
   box-shadow: inset 0 0 0 1000px #00102eaf;
   position: relative;

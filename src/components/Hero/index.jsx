@@ -25,7 +25,7 @@ const Hero = () => {
             <h1 data-aos="fade-right">
               Hi 👋, I'm <span>Chibuokem</span>
             </h1>
-            <h2 data-aos="fade-right">Front End Developer</h2>
+            <h2 data-aos="fade-right">Frontend Developer</h2>
             <IntroBody data-aos="fade-right">
               <p>
                 I build websites that focus on responsive design, accessibility
@@ -42,12 +42,16 @@ const Hero = () => {
                   options={{
                     cursor: " />",
                     strings: [
-                      "HTML",
-                      "CSS",
+                      "HTML5",
+                      "CSS3",
                       "Javascript",
+                      "Typescript",
                       "ReactJs",
+                      "Vuejs",
                       "Sass",
                       "TailwindCSS",
+                      "Chakra-UI",
+                      "Firebase",
                       "Styled-Comps",
                     ],
                     autoStart: true,
