@@ -49,8 +49,7 @@ const Contact = () => {
       .catch((err) => {
         console.log("FAILED...", err);
       });
-    setFormInfo({ [e.target.name]: "" });
-    console.log(formInfo);
+    setFormInfo({ name: "", email: "", message: "" });
   };
   return (
     <ContactSection id="contact">
