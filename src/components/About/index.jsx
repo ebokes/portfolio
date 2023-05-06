@@ -26,17 +26,19 @@ const About = () => {
           <Left data-aos="fade-right">
             <Text>
               <p>
-                I'm a success-driven and determined Frontend developer. I have
-                experience using HTML, CSS, Sass, TailwindCSS,
-                styled-components, JavaScript, Reactjs to build accessible
-                component-based web pages and systems. I am a passionate and
-                enthusiastic learner, determined and result oriented.
+                I am a highly skilled front-end developer with over 3 years of
+                experience in HTML, CSS, JavaScript, TypeScript, ReactJS, and
+                VueJS. I enjoy creating user-friendly interfaces that are
+                visually appealing and easy to use. My strong collaborative
+                skills enable me to work efficiently with other developers,
+                designers, and stakeholders.
               </p>
               <p>
-                I have achieved a good understanding of relational databases, as
-                well as solid computer science foundations such as complex
-                algorithms and code challenge type problem solving.
+                I am committed to constantly improving my skills and staying
+                up-to-date with the latest front-end development trends to
+                deliver exceptional code and user experiences
               </p>
+              <p>Find out more about me and my accomplishments in my Resume</p>
             </Text>
             <Cta>
               <ResumeBtn href={resume} target="_blank">
