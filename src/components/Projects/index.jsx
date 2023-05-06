@@ -54,14 +54,17 @@ const Project = () => {
               <Col2 data-aos="fade-left">
                 <div>
                   <h3>{item.title}</h3>
-                  <p>{item.text}</p>
+                  <p>{item.intro}</p>
                 </div>
                 <div>
                   <h4>Features of this project</h4>
-                  <p>{item.text1}</p>
+                  <ul>
+                    {item.features.map((feature, i) => (
+                      <li key={i}>{feature}</li>
+                    ))}
+                  </ul>
                 </div>
                 <div>
-                  <h4>Tech stack</h4>
                   <span>
                     {item.stack.map((tech, index) => (
                       <p key={index}>

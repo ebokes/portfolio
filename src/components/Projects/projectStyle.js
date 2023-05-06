@@ -134,6 +134,16 @@ export const Col2 = styled.div`
 
   div {
     margin-bottom: 2rem;
+
+    ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+
+    h3,
+    h4 {
+      color: #064797;
+    }
   }
   span p {
     display: inline-flex;
