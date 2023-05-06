@@ -1,7 +1,9 @@
 import HTML from "../../assets/html-5-svgrepo-com.svg";
 import CSS from "../../assets/css-3-svgrepo-com.svg";
 import js from "../../assets/javascript.svg";
+import ts from "../../assets/typescript-icon-svgrepo-com.svg";
 import react from "../../assets/react-svgrepo-com.svg";
+import vue from "../../assets/vue-svgrepo-com.svg";
 import sass from "../../assets/sass-svgrepo-com.svg";
 import styled from "../../assets/styled-svgrepo-com.svg";
 import tailwind from "../../assets/tailwindcss-icon-svgrepo-com.svg";
@@ -11,9 +13,11 @@ import github from "../../assets/github-svgrepo-com (3).svg";
 import gitlab from "../../assets/gitlab-svgrepo-com.svg";
 import netlify from "../../assets/netlify-svgrepo-com.svg";
 import bitbucket from "../../assets/bitbucket-svgrepo-com.svg";
+import firebase from "../../assets/firebase-svgrepo-com.svg";
 import figma from "../../assets/figma-svgrepo-com.svg";
 import codepen from "../../assets/codepen-icon-svgrepo-com.svg";
 import motion from "../../assets/Framer-motion.svg";
+import chakraUI from "../../assets/chakra-ui.png";
 
 export const TechData = [
   {
@@ -34,6 +38,12 @@ export const TechData = [
     alt: "JavaScript icon",
     caption: "JavaScript",
   },
+  {
+    id: 4,
+    src: ts,
+    alt: "TypeScript icon",
+    caption: "TypeScript",
+  },
 ];
 
 export const LibrariesData = [
@@ -45,30 +55,42 @@ export const LibrariesData = [
   },
   {
     id: 2,
+    src: vue,
+    alt: "vue icon",
+    caption: "Vue",
+  },
+  {
+    id: 3,
     src: sass,
     alt: "Sass icon",
     caption: "Sass",
   },
   {
-    id: 3,
+    id: 4,
     src: styled,
     alt: "styled icon",
     caption: "Styled-Comp.",
   },
   {
-    id: 4,
+    id: 5,
     src: tailwind,
     alt: "tailwind icon",
     caption: "TailwindCSS",
   },
   {
-    id: 5,
+    id: 6,
     src: MaterialUi,
     alt: "MaterialUi icon",
     caption: "MaterialUi",
   },
   {
-    id: 6,
+    id: 7,
+    src: chakraUI,
+    alt: "chakraUI icon",
+    caption: "ChakraUI",
+  },
+  {
+    id: 8,
     src: motion,
     alt: "Framer-motion",
     caption: "Framer-Motion",
@@ -117,5 +139,11 @@ export const ToolData = [
     src: figma,
     alt: "figma icon",
     caption: "Figma",
+  },
+  {
+    id: 8,
+    src: firebase,
+    alt: "firebase icon",
+    caption: "Firebase",
   },
 ];
