@@ -49,8 +49,8 @@ export const Menu = styled.ul`
     justify-content: flex-start;
     flex-direction: column;
     position: absolute;
-    top: 7rem;
-    right: -0.5rem;
+    top: 6rem;
+    right: -5rem;
     background-color: rgb(0, 16, 46);
     padding-left: 2rem;
     height: 100vh;
