@@ -36,6 +36,10 @@ export const Text = styled.div`
     font-family: "Nunito", sans-serif;
     font-size: 1.8rem;
 
+    a {
+      color: #feb72b;
+    }
+
     &:not(:last-child) {
       margin-bottom: 1rem;
     }
